@@ -29,7 +29,7 @@ body {
 .btn-outline {
   position: relative;
   background: transparent;
-  border-radius: 18px;
+  border-radius: 0.5rem; /* 8px - matches rounded-lg */
 }
 
 .btn-outline::before {

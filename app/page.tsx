@@ -25,9 +25,10 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 h-[calc(100vh-140px)] px-6 py-20 md:px-16 md:pb-48">
-          <div className="grid h-full items-end gap-8 md:grid-cols-[minmax(0,720px)_1fr]">
-            {/* Main Content */}
-            <div className="flex flex-col gap-6 max-w-2xl">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid h-full items-end gap-8 md:grid-cols-[minmax(0,720px)_1fr]">
+              {/* Main Content */}
+              <div className="flex flex-col gap-6 max-w-2xl">
             {/* Subtitle */}
             <div className="space-y-5">
               <p className="text-[40px] md:text-[48px] lg:text-[52px] text-white/90 font-light leading-[1.2] tracking-[-0.01em]">
@@ -40,11 +41,11 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col gap-3 sm:flex-row pt-2">
-              <a className="inline-flex w-fit items-center gap-2 rounded-[14px] bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-7 py-3 font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110">
+              <a className="inline-flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-7 py-3 font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110">
                 See Our AI Suite
                 <ArrowUpRight className="h-4 w-4" />
               </a>
-              <a className="btn-outline inline-flex w-fit items-center gap-2 rounded-[18px] px-7 py-3 text-white font-semibold">
+              <a className="btn-outline inline-flex w-fit items-center gap-2 rounded-lg px-7 py-3 text-white font-semibold">
                 Investor Deck
                 <ArrowUpRight className="h-4 w-4" />
               </a>
@@ -56,12 +57,13 @@ export default function Home() {
               <br />
               <span className="font-medium text-white">From strategy to deployment in weeks, not quarters</span>
             </p>
-          </div>
-          {/* Right column: Scroll indicator */}
-          <div className="hidden md:flex items-center gap-3 text-xs text-gray-300 tracking-widest col-start-2 row-start-1 self-end justify-self-end">
-            <Mouse size={16} />
-            <span>SCROLL TO EXPLORE</span>
-          </div>
+              </div>
+              {/* Right column: Scroll indicator */}
+              <div className="hidden md:flex items-center gap-3 text-xs text-gray-300 tracking-widest col-start-2 row-start-1 self-end justify-self-end">
+                <Mouse size={16} />
+                <span>SCROLL TO EXPLORE</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

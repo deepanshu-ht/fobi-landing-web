@@ -2,6 +2,7 @@
 
 import { ChevronDown, Menu, X, Wallet, Database, Building2, Phone, Mail, Globe, FileText, DollarSign, File, Presentation, TrendingUp, BarChart3, Users, PieChart, LineChart } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,16 +37,28 @@ export default function Navbar() {
   return (
     <nav className="relative z-50 px-6 py-6">
       <div className="mx-auto max-w-6xl">
-        <div className="outline-gradient rounded-[18px] bg-black/60 backdrop-blur-xl px-8 py-4">
+        <div className="outline-gradient rounded-xl bg-black/60 backdrop-blur-xl px-8 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-1">
-                <span className="text-xl font-bold text-white">fobi</span>
+            <div className="flex items-center gap-2 md:gap-4">
+              <div className="relative w-24 h-8 md:w-32 md:h-10">
+                <Image
+                  src="/fobi.png"
+                  alt="fobi"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
               <div className="flex gap-2">
-                <span className="rounded px-2 py-1 text-xs font-semibold bg-red-600/80 text-white border border-red-500/50">FOBI</span>
-                <span className="rounded px-2 py-1 text-xs font-semibold bg-red-600/80 text-white border border-red-500/50">FOBI</span>
+                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-3 py-1 md:px-4 md:py-1.5">
+                  <span className="text-base md:text-lg">🇺🇸</span>
+                  <span className="text-xs md:text-sm font-medium text-white">FOBIF</span>
+                </div>
+                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-3 py-1 md:px-4 md:py-1.5">
+                  <span className="text-base md:text-lg">🇨🇦</span>
+                  <span className="text-xs md:text-sm font-medium text-white">FOBI</span>
+                </div>
               </div>
             </div>
 
@@ -133,7 +146,7 @@ export default function Navbar() {
               </div>
 
               <button className="text-sm font-medium text-white/80 hover:text-white transition">About Us</button>
-              <button className="outline-gradient rounded-[18px] px-6 py-2 text-sm font-medium text-white hover:bg-white/5 transition">
+              <button className="outline-gradient rounded-lg px-6 py-2 text-sm font-medium text-white hover:bg-white/5 transition">
                 Contact Us
               </button>
             </div>
@@ -143,7 +156,13 @@ export default function Navbar() {
               className="md:hidden text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? (
+                <X size={24} />
+              ) : (
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.875 20.25C17.4963 20.25 18 20.7537 18 21.375C18 21.9963 17.4963 22.5 16.875 22.5H6.75C6.12868 22.5 5.625 21.9963 5.625 21.375C5.625 20.7537 6.12868 20.25 6.75 20.25H16.875ZM22.5 12.375C23.1213 12.375 23.625 12.8787 23.625 13.5C23.625 14.1213 23.1213 14.625 22.5 14.625H4.5C3.87868 14.625 3.375 14.1213 3.375 13.5C3.375 12.8787 3.87868 12.375 4.5 12.375H22.5ZM20.25 4.5C20.8713 4.5 21.375 5.00368 21.375 5.625C21.375 6.24632 20.8713 6.75 20.25 6.75H10.125C9.50368 6.75 9 6.24632 9 5.625C9 5.00368 9.50368 4.5 10.125 4.5H20.25Z" fill="white"/>
+                </svg>
+              )}
             </button>
           </div>
 
