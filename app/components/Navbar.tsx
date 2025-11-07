@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileAccordion, setMobileAccordion] = useState<string | null>(null);
 
   const solutionsMenu = [
     { icon: Wallet, label: 'Wallet Passes' },
@@ -168,20 +169,86 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="mt-4 flex flex-col gap-4 border-t border-white/10 pt-4 md:hidden">
-              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition">
-                Our Solutions
-              </button>
-              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition">
-                Resources
-              </button>
-              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition">
-                Investors
-              </button>
-              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition">
+            <div className="mt-4 flex flex-col gap-2 border-t border-white/10 pt-4 md:hidden">
+              {/* Our Solutions Accordion */}
+              <div>
+                <button
+                  className="w-full flex items-center justify-between text-left text-sm font-medium text-white/80 hover:text-white transition py-2"
+                  onClick={() => setMobileAccordion(mobileAccordion === 'solutions' ? null : 'solutions')}
+                >
+                  Our Solutions
+                  <ChevronDown size={16} className={`transition-transform ${mobileAccordion === 'solutions' ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileAccordion === 'solutions' && (
+                  <div className="mt-2 space-y-1 pl-4">
+                    {solutionsMenu.map((item, idx) => (
+                      <button
+                        key={idx}
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-white/70 hover:bg-white/5 hover:text-white transition"
+                      >
+                        <item.icon className="w-4 h-4 text-blue-500" />
+                        <span>{item.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Resources Accordion */}
+              <div>
+                <button
+                  className="w-full flex items-center justify-between text-left text-sm font-medium text-white/80 hover:text-white transition py-2"
+                  onClick={() => setMobileAccordion(mobileAccordion === 'resources' ? null : 'resources')}
+                >
+                  Resources
+                  <ChevronDown size={16} className={`transition-transform ${mobileAccordion === 'resources' ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileAccordion === 'resources' && (
+                  <div className="mt-2 space-y-1 pl-4">
+                    {resourcesMenu.map((item, idx) => (
+                      <button
+                        key={idx}
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-white/70 hover:bg-white/5 hover:text-white transition"
+                      >
+                        <item.icon className="w-4 h-4 text-blue-500" />
+                        <span>{item.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Investors Accordion */}
+              <div>
+                <button
+                  className="w-full flex items-center justify-between text-left text-sm font-medium text-white/80 hover:text-white transition py-2"
+                  onClick={() => setMobileAccordion(mobileAccordion === 'investors' ? null : 'investors')}
+                >
+                  Investors
+                  <ChevronDown size={16} className={`transition-transform ${mobileAccordion === 'investors' ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileAccordion === 'investors' && (
+                  <div className="mt-2 space-y-1 pl-4">
+                    {investorsMenu.map((item, idx) => (
+                      <button
+                        key={idx}
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-white/70 hover:bg-white/5 hover:text-white transition"
+                      >
+                        <item.icon className="w-4 h-4 text-blue-500" />
+                        <span>{item.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* About Us */}
+              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition py-2">
                 About Us
               </button>
-              <button className="rounded-lg border border-white/30 px-6 py-2 text-sm font-medium text-white hover:bg-white/10 transition">
+
+              {/* Contact Us */}
+              <button className="outline-gradient rounded-lg px-6 py-2 text-sm font-medium text-white hover:bg-white/5 transition mt-2">
                 Contact Us
               </button>
             </div>
