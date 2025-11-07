@@ -3,24 +3,25 @@
 import Image from 'next/image';
 import { Mouse, ArrowUpRight } from 'lucide-react';
 import Navbar from './components/Navbar';
+import StatsShowcase from './components/StatsShowcase';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen bg-black text-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-140px)] overflow-hidden">
+      <section className="relative min-h-[calc(100vh-140px)]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/bg.png"
             alt="Background"
             fill
-            className="object-cover -mt-32"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
+          <div className="" />
         </div>
 
         {/* Content */}
@@ -78,6 +79,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <StatsShowcase
+        title="is one of North America’s first AI companies"
+        subtitle="We didn't pivot to AI. We pioneered it"
+        badgeSrc="/fobi.png"
+        items={[
+          { value: '150+', label: 'Countries', description: 'Global deployment infrastructure, battle-tested at scale' },
+          { value: '1 Billion+', label: 'Data Points', description: 'Real-time intelligence layer powering enterprise decisions' },
+          { value: '40%+', label: 'Revenue', description: 'Growing Year On Year' },
+          { value: '100M+', label: 'Wallet Passes', description: 'Millions of live interactions proving execution capability' },
+        ]}
+      />
     </div>
   );
 }
