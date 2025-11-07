@@ -1,65 +1,70 @@
-import Image from "next/image";
+'use client';
+
+import Image from 'next/image';
+import { Mouse, ArrowUpRight } from 'lucide-react';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-black text-white overflow-hidden">
+      <Navbar />
+
+      {/* Hero Section */}
+      <section className="relative min-h-[calc(100vh-140px)] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/bg.png"
+            alt="Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Content */}
+        <div className="relative z-10 h-[calc(100vh-140px)] px-6 py-20 md:px-16 md:pb-48">
+          <div className="grid h-full items-end gap-8 md:grid-cols-[minmax(0,720px)_1fr]">
+            {/* Main Content */}
+            <div className="flex flex-col gap-6 max-w-2xl">
+            {/* Subtitle */}
+            <div className="space-y-5">
+              <p className="text-[40px] md:text-[48px] lg:text-[52px] text-white/90 font-light leading-[1.2] tracking-[-0.01em]">
+                While $350B Consulting Firms Were Learning AI...
+              </p>
+              <h1 className="text-[72px] md:text-[84px] lg:text-[92px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)]">
+                We Were Building It
+              </h1>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-3 sm:flex-row pt-2">
+              <a className="inline-flex w-fit items-center gap-2 rounded-[14px] bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-7 py-3 font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110">
+                See Our AI Suite
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+              <a className="btn-outline inline-flex w-fit items-center gap-2 rounded-[18px] px-7 py-3 text-white font-semibold">
+                Investor Deck
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+
+            {/* Description */}
+            <p className="max-w-lg text-sm text-gray-400 md:text-base leading-relaxed pt-4">
+              AI-native consulting. Real products. Measurable outcomes.
+              <br />
+              <span className="font-medium text-white">From strategy to deployment in weeks, not quarters</span>
+            </p>
+          </div>
+          {/* Right column: Scroll indicator */}
+          <div className="hidden md:flex items-center gap-3 text-xs text-gray-300 tracking-widest col-start-2 row-start-1 self-end justify-self-end">
+            <Mouse size={16} />
+            <span>SCROLL TO EXPLORE</span>
+          </div>
+          </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
