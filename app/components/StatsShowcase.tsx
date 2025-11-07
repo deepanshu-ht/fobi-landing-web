@@ -42,12 +42,12 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
         <div className="relative mt-10 md:mt-14 min-h-[520px] md:min-h-[560px]">
           <div className="relative z-10 flex gap-4 pt-8">
             <div className='flex flex-col gap-4 -ml-36'>
-              <div className='mt-8 h-42 w-81 bg-gradient-to-l from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
-              <div className='h-42 w-81 bg-gradient-to-l from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
-              <div className='h-42 w-81 bg-gradient-to-l from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='mt-8 h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_100%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_50%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_0%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='-mt-8 h-42 w-81 bg-gradient-to-t from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='-mt-8 h-42 w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_120%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
               {leftItems[0] && (
                 <div className='w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-6'>
                   <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-3xl md:text-4xl font-extrabold'>{leftItems[0].value}</div>
@@ -62,10 +62,10 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
                   <p className='text-white/70 text-sm mt-2'>{leftItems[1].description}</p>
                 </div>
               )}
-              <div className='h-42 w-81 bg-gradient-to-b from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_-20%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='-mt-24 h-42 w-81 bg-gradient-to-t from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='-mt-24 h-42 w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_120%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
               {rightItems[0] && (
                 <div className='w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-6'>
                   <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-3xl md:text-4xl font-extrabold'>{rightItems[0].value}</div>
@@ -80,12 +80,12 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
                   <p className='text-white/70 text-sm mt-2'>{rightItems[1].description}</p>
                 </div>
               )}
-              <div className='h-42 w-81 bg-gradient-to-b from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_-20%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='mt-8 h-42 w-81 bg-gradient-to-r from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
-              <div className='h-42 w-81 bg-gradient-to-r from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
-              <div className='h-42 w-81 bg-gradient-to-r from-[#E3ECF2]/20 to-[#E3ECF2]/0 via-[#E3ECF2]/0 rounded-xl'/>
+              <div className='mt-8 h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_-10%_100%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_-10%_50%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
+              <div className='h-42 w-81 rounded-xl bg-[radial-gradient(120%_120%_at_-10%_0%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
             </div>
           </div>
         </div>
