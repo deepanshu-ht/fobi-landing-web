@@ -1,9 +1,8 @@
-'use client';
-
 import Image from 'next/image';
 import { Mouse, ArrowUpRight } from 'lucide-react';
 import Navbar from './components/Navbar';
 import StatsShowcase from './components/StatsShowcase';
+import AISuiteBento from './components/AISuiteBento';
 
 export default function Home() {
   return (
@@ -91,6 +90,7 @@ export default function Home() {
           { value: '100M+', label: 'Wallet Passes', description: 'Millions of live interactions proving execution capability' },
         ]}
       />
+      <AISuiteBento />
     </div>
   );
 }
