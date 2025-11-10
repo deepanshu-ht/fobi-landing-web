@@ -152,6 +152,29 @@ body {
   pointer-events: none;
 }
 
+/* Blue to purple gradient border */
+.gradient-border-blue {
+  position: relative;
+  background: transparent;
+}
+.gradient-border-blue::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: var(--og-width, 2px);
+  background: linear-gradient(135deg, #4DA3FF 0%, #8B5CF6 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

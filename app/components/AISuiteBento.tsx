@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from "lucide-react";
 
 export default function AISuiteBento() {
@@ -13,28 +14,29 @@ export default function AISuiteBento() {
           <p className="text-sm md:text-base text-white/70 font-semibold">Deploy in weeks. See ROI immediately</p>
         </div>
 
-        <div className="flex gap-4 mt-10 md:mt-14">
+        <div className="flex flex-col lg:flex-row gap-4 mt-10 md:mt-14">
           {/* left side */}
           <div className="flex flex-col gap-4">
-            <div className="flex gap-4">
+            <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col gap-4">
                 {/* $150B+ Card */}
-                <div className="size-[16rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col justify-between outline-gradient" style={{ ['--og-width' as any]: '1px' }}>
-                  <div>
-                    <div className="text-[#4DA3FF] text-xs font-medium">Enterprise Software Automation Market</div>
-                    <div className="mt-2 bg-gradient-to-b from-[#4DA3FF] to-[#3E5BFF] bg-clip-text text-transparent text-3xl font-extrabold">$150B+</div>
+                <div className="w-full lg:size-[16rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
+                  <div className="my-auto flex flex-col gap-4">
+                    <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-5xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)]">$150B+</div>
+                    <div className="text-[#3970FF] text-xl font-medium">Enterprise Software Automation Market</div>
                   </div>
-                  <a className="inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition">
-                    Learn More <ArrowRight className="h-3 w-3" />
-                  </a>
                 </div>
 
                 {/* AI Call Agent Card */}
-                <div className="w-[16rem] h-[22rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-white text-lg font-bold">AI Call Agent</h3>
-                    <Phone className="h-8 w-8 text-blue-400" />
+                <div className="w-full lg:w-[16rem] lg:h-[26rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col overflow-hidden">
+                  <div className="flex justify-center -mt-28 -mx-6">
+                    <Image src="/aicallagent.png" alt="AI Call Agent" width={120} height={120} className="w-full" />
                   </div>
+                  <div className="flex items-start justify-between mb-3 -mt-8">
+                    <h3 className="text-white text-2xl font-bold">AI Call Agent</h3>
+                    {/* <Phone className="w-full text-blue-400" /> */}
+                  </div>
+
                   <p className="text-white/75 text-xs leading-relaxed">24/7 Intelligent Reception + Outbound Sales</p>
                   <p className="mt-2 text-white/75 text-xs leading-relaxed">Natural conversations. Real appointments booked.</p>
                   <p className="mt-2 text-white/75 text-xs leading-relaxed">Real estate. Healthcare. Sales qualification. Every call center operation globally</p>
@@ -45,27 +47,28 @@ export default function AISuiteBento() {
               </div>
               <div className="flex flex-col gap-4">
                 {/* Corporate LLM Card */}
-                <div className="h-[20rem] w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
+                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col overflow-hidden">
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <div className="text-xs text-white/60">Your Private ChatGPT. Zero Data Leakage.</div>
                       <h3 className="mt-1 text-white text-xl font-bold">Corporate LLM</h3>
+                      <div className="text-xs text-white/60">Your Private ChatGPT. Zero Data Leakage.</div>
                       <p className="mt-2 text-white/75 text-xs leading-relaxed">Fortune 500 pharma using it now. Banking, Legal, Medical, Government. Commercially‑licensed. Canadian-hosted. 100% compliant</p>
                     </div>
-                    <ShieldCheck className="h-8 w-8 text-blue-400 flex-shrink-0" />
-                  </div>
-                  <div className="mt-auto flex flex-wrap items-center gap-2">
-                    <span className="px-2 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] text-white/80">Corporate Knowledge</span>
-                    <span className="px-2 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] text-white/80">Docs</span>
-                    <span className="px-2 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] text-white/80">AI</span>
+                    
+                    {/* <ShieldCheck className="h-8 w-8 text-blue-400 flex-shrink-0" /> */}
                   </div>
                   <a className="mt-3 inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition">
                     Learn More <ArrowRight className="h-3 w-3" />
                   </a>
+                  <div className="flex mt-10 items-center justify-center">
+                    <div className="text-right">Coorporate Knowledge</div>
+                    <Image src="/cllm.png" alt="Corporate LLM" width={120} height={120} className="w-72" />
+                  </div>
+
                 </div>
 
                 {/* AI Email Support Card */}
-                <div className="h-[18rem] w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
+                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-white text-xl font-bold">AI Email Support</h3>
                     <Mail className="h-8 w-8 text-blue-400" />
@@ -78,23 +81,23 @@ export default function AISuiteBento() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4">
-              <div className="flex gap-4 w-full">
+            <div className="flex flex-col lg:flex-row gap-4">
+              <div className="flex flex-col lg:flex-row gap-4 w-full">
                 {/* AI Paralysis Banner */}
-                <div className="h-[11rem] w-[35rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl px-6 flex items-center justify-between">
+                <div className="w-full lg:h-[11rem] lg:w-[35rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 flex items-center justify-between">
                   <div className="text-white text-sm font-semibold">
                     AI Paralysis Is Costing Businesses Billions Every company knows they need AI. Most don't know where to start. We solve that
                   </div>
-                  <div className="flex items-center ml-4">
+                  <div className="hidden lg:flex items-center ml-4">
                     <div className="w-16 h-px bg-white/20 mr-2" />
                     <ArrowRight className="h-4 w-4 text-white/70" />
                   </div>
                 </div>
 
                 {/* 4+ Production Card */}
-                <div className="h-[11rem] w-[11rem] rounded-2xl bg-zinc-900/70 backdrop-blur-xl px-4 outline-gradient flex items-center justify-center gap-3" style={{ ['--og-width' as any]: '2px' }}>
-                  <div className="bg-gradient-to-b from-[#4DA3FF] to-[#3E5BFF] bg-clip-text text-transparent text-3xl font-extrabold">4+</div>
-                  <div className="text-white/90 text-[10px] font-semibold leading-tight">Production‑ready<br/>AI solutions</div>
+                <div className="w-full lg:h-[11rem] lg:w-[11rem] rounded-2xl bg-zinc-900/70 backdrop-blur-xl px-6 py-6 gradient-border-blue gap-3 flex flex-col" style={{ ['--og-width' as any]: '2px' }}>
+                  <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-6xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)] mt-2">4+</div>
+                  <div className="text-[#3970FF] text-[15px] font-semibold leading-tight text-center lg:text-left">Production‑ready<br/>AI solutions</div>
                 </div>
               </div>
             </div>
@@ -103,7 +106,7 @@ export default function AISuiteBento() {
           {/* right side */}
           <div className="flex flex-col gap-4">
             {/* AI Web Presence Card */}
-            <div className="w-[16rem] h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
+            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-white text-lg font-bold">AI Web Presence</h3>
                 <Globe className="h-8 w-8 text-blue-400" />
@@ -116,7 +119,7 @@ export default function AISuiteBento() {
             </div>
 
             {/* Data Intelligence Card */}
-            <div className="w-[16rem] h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
+            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-white text-lg font-bold leading-tight">Fobi's Data Intelligence<br/>Plug-and-play</h3>
                 <Database className="h-8 w-8 text-blue-400" />
