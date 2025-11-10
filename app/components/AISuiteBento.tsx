@@ -5,8 +5,16 @@ import { ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from "lucide-re
 
 export default function AISuiteBento() {
   return (
-    <section className="relative py-16 md:py-28">
-      <div className="relative mx-auto max-w-6xl px-4 md:px-16">
+    <section className="relative py-16 md:py-28 bg-black overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-blue-900/10 to-black" />
+      
+      {/* Blue glow effect - center blur ball */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[600px] h-[400px] md:w-[900px] md:h-[600px] bg-blue-600/25 rounded-full blur-[120px] md:blur-[150px]" />
+      </div>
+      
+      <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-16">
         <div className="text-center space-y-2 md:space-y-4 mb-8 md:mb-10">
           <h2 className="text-[32px] sm:text-[44px] md:text-[56px] leading-[1.1] font-extrabold tracking-[-0.02em] text-white">
             The Fobi AI Suite

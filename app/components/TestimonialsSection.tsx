@@ -59,8 +59,13 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="relative py-16 md:py-24 px-6 md:px-16 bg-black">
-      <div className="mx-auto max-w-7xl">
+    <section className="relative py-16 md:py-24 px-6 md:px-16 bg-black overflow-hidden">
+      {/* Blue glow effect - left side blur ball */}
+      <div className="absolute -left-36 top-1/2 -translate-y-1/2 pointer-events-none">
+        <div className="w-[400px] h-[300px] md:w-[600px] md:h-[500px] bg-blue-600/20 rounded-full blur-[100px] md:blur-[120px]" />
+      </div>
+      
+      <div className="relative z-10 mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">

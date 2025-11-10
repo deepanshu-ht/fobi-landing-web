@@ -4,8 +4,13 @@ import Image from "next/image";
 
 export default function ROISection() {
   return (
-    <section className="relative py-16 md:py-28 bg-black">
-      <div className="relative mx-auto max-w-6xl px-4 md:px-16">
+    <section className="relative py-16 md:py-28 bg-black overflow-hidden">
+      {/* Blue glow effect - right side blur ball */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
+        <div className="w-[400px] h-[300px] md:w-[600px] md:h-[500px] bg-blue-600/20 rounded-full blur-[100px] md:blur-[120px]" />
+      </div>
+      
+      <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-16">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-[32px] sm:text-[44px] md:text-[56px] leading-[1.1] font-extrabold tracking-[-0.02em] text-white">

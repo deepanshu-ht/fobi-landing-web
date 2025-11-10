@@ -21,9 +21,13 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
   const rightItems = [items[1], items[3]].filter(Boolean);
 
   return (
-    <section className={`relative py-20 md:py-28 overflow-hidden ${className}`}>
+    <section className={`relative py-20 md:py-28 overflow-hidden bg-black ${className}`}>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(1200px_400px_at_center_top,rgba(255,255,255,0.06),transparent)]" />
+        {/* Blue glow effect - center blur ball */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-[300px] h-[200px] md:w-[500px] md:h-[300px] bg-blue-600/25 rounded-full blur-[120px] md:blur-[150px]" />
+        </div>
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 md:px-16">
