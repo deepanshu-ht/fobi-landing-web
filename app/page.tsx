@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import { Mouse, ArrowUpRight } from 'lucide-react';
-import Navbar from './components/Navbar';
-import StatsShowcase from './components/StatsShowcase';
-import AISuiteBento from './components/AISuiteBento';
-import WalletPassesSection from './components/WalletPassesSection';
+import Image from "next/image";
+import { Mouse, ArrowUpRight } from "lucide-react";
+import Navbar from "./components/Navbar";
+import StatsShowcase from "./components/StatsShowcase";
+import AISuiteBento from "./components/AISuiteBento";
+import ROISection from "./components/ROISection";
+import WalletPassesSection from "./components/WalletPassesSection";
 
 export default function Home() {
   return (
@@ -56,7 +57,9 @@ export default function Home() {
                 <p className="max-w-lg text-sm md:text-base leading-relaxed pt-4 text-gray-400 text-center md:text-left">
                   AI-native consulting. Real products. Measurable outcomes.
                   <br />
-                  <span className="font-medium text-white">From strategy to deployment in weeks, not quarters</span>
+                  <span className="font-medium text-white">
+                    From strategy to deployment in weeks, not quarters
+                  </span>
                 </p>
               </div>
 
@@ -70,8 +73,20 @@ export default function Home() {
             {/* Mobile: Bottom section with scroll indicator */}
             <div className="md:hidden flex flex-col items-center gap-3 pb-8 mt-auto">
               <div className="flex flex-col items-center gap-3 text-xs text-gray-300 tracking-widest">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 5V19M12 19L5 12M12 19L19 12"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
                 <span>SCROLL TO EXPLORE</span>
               </div>
@@ -85,14 +100,34 @@ export default function Home() {
         subtitle="We didn't pivot to AI. We pioneered it"
         badgeSrc="/fobi.png"
         items={[
-          { value: '150+', label: 'Countries', description: 'Global deployment infrastructure, battle-tested at scale' },
-          { value: '1 Billion+', label: 'Data Points', description: 'Real-time intelligence layer powering enterprise decisions' },
-          { value: '40%+', label: 'Revenue', description: 'Growing Year On Year' },
-          { value: '100M+', label: 'Wallet Passes', description: 'Millions of live interactions proving execution capability' },
+          {
+            value: "150+",
+            label: "Countries",
+            description:
+              "Global deployment infrastructure, battle-tested at scale",
+          },
+          {
+            value: "1 Billion+",
+            label: "Data Points",
+            description:
+              "Real-time intelligence layer powering enterprise decisions",
+          },
+          {
+            value: "40%+",
+            label: "Revenue",
+            description: "Growing Year On Year",
+          },
+          {
+            value: "100M+",
+            label: "Wallet Passes",
+            description:
+              "Millions of live interactions proving execution capability",
+          },
         ]}
       />
       <AISuiteBento />
       <WalletPassesSection />
+      <ROISection />
     </div>
   );
 }
