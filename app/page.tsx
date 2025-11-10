@@ -5,6 +5,7 @@ import StatsShowcase from "./components/StatsShowcase";
 import AISuiteBento from "./components/AISuiteBento";
 import ROISection from "./components/ROISection";
 import WalletPassesSection from "./components/WalletPassesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -96,7 +97,7 @@ export default function Home() {
       </section>
 
       <StatsShowcase
-        title="is one of North America’s first AI companies"
+        title="is one of North America's first AI companies"
         subtitle="We didn't pivot to AI. We pioneered it"
         badgeSrc="/fobi.png"
         items={[
@@ -128,6 +129,7 @@ export default function Home() {
       <AISuiteBento />
       <WalletPassesSection />
       <ROISection />
+      <TestimonialsSection />
     </div>
   );
 }
