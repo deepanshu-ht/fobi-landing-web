@@ -71,11 +71,40 @@ export default function AISuiteBento() {
                 <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-white text-xl font-bold">AI Email Support</h3>
-                    <Mail className="h-8 w-8 text-blue-400" />
                   </div>
                   <p className="text-white/75 text-xs leading-relaxed">Thousands of Inquiries Handled Automatically</p>
-                  <p className="mt-2 text-white/75 text-xs leading-relaxed">Ugly Potato Day. 20K attendees. Zero human support needed. Ticketing. E-commerce. SaaS. Every repetitive customer inquiry eliminated</p>
-                  <a className="mt-auto inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition">
+                  <p className="mt-2 text-white/75 text-xs leading-relaxed mb-4">Ugly Potato Day. 20K attendees. Zero human support needed. Ticketing. E-commerce. SaaS. Every repetitive customer inquiry eliminated</p>
+                  
+                  {/* Email Graphic */}
+                  <div className="relative mt-auto mb-4">                    
+                    <div className="flex items-end gap-4">
+                      {/* Profile Image */}
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex-shrink-0 overflow-hidden">
+                        <div className="w-full h-full bg-zinc-800/50">
+                        <Image src="/review.png" alt="Profile" width={120} height={120} className="w-full" />
+                        </div>
+                      </div>
+                      
+                      {/* Email Card */}
+                      <div className="flex-1 bg-zinc-800/50 rounded-xl p-4 border border-white/5 mb-6">
+                        <div className="flex items-start gap-3">
+                          {/* Email Icon */}
+                          <div className="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0">
+                            <Mail className="w-6 h-6 text-black" />
+                          </div>
+                          
+                          {/* Email Lines */}
+                          <div className="flex-1 space-y-2">
+                            <div className="h-3 bg-white/10 rounded-full w-3/4"></div>
+                            <div className="h-3 bg-white/10 rounded-full w-1/2"></div>
+                            <div className="h-3 bg-white/10 rounded-full w-full"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <a className="inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition">
                     Learn More <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>
