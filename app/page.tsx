@@ -3,6 +3,7 @@ import { Mouse, ArrowUpRight } from 'lucide-react';
 import Navbar from './components/Navbar';
 import StatsShowcase from './components/StatsShowcase';
 import AISuiteBento from './components/AISuiteBento';
+import WalletPassesSection from './components/WalletPassesSection';
 
 export default function Home() {
   return (
@@ -91,6 +92,7 @@ export default function Home() {
         ]}
       />
       <AISuiteBento />
+      <WalletPassesSection />
     </div>
   );
 }
