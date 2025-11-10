@@ -154,15 +154,18 @@ export default function AISuiteBento() {
             </div>
 
             {/* Data Intelligence Card */}
-            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col">
+            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex flex-col overflow-hidden">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-white text-lg font-bold leading-tight">Fobi's Data Intelligence<br/>Plug-and-play</h3>
-                <Database className="h-8 w-8 text-blue-400" />
+                {/* <Database className="h-8 w-8 text-blue-400" /> */}
               </div>
-              <p className="text-white/75 text-xs leading-relaxed">Fobi's Insights Portal provides businesses with real-time analytics to understand customer behavior, attribution, and ROI measurement for informed decision-making</p>
-              <a className="mt-auto inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition">
+              <p className="text-white/75 text-xs leading-relaxed mb-3">Fobi's Insights Portal provides businesses with real-time analytics to understand customer behavior, attribution, and ROI measurement for informed decision-making</p>
+              <a className="inline-flex items-center gap-1 text-xs text-white/80 hover:text-white transition mb-3">
                 Learn More <ArrowRight className="h-3 w-3" />
               </a>
+              <div className="flex justify-center mt-auto -mx-6 -mb-6">
+                <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-full" />
+              </div>
             </div>
 
           </div>
