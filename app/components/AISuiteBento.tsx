@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
 import { ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from "lucide-react";

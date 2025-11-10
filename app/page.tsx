@@ -6,6 +6,7 @@ import AISuiteBento from "./components/AISuiteBento";
 import ROISection from "./components/ROISection";
 import WalletPassesSection from "./components/WalletPassesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import EnterpriseSection from "./components/EnterpriseSection";
 
 export default function Home() {
   return (
@@ -130,6 +131,7 @@ export default function Home() {
       <WalletPassesSection />
       <ROISection />
       <TestimonialsSection />
+      <EnterpriseSection />
     </div>
   );
 }
