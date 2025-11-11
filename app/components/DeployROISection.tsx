@@ -14,10 +14,10 @@ export default function DeployROISection() {
         </div>
 
         <div className="relative">
-          <div className="flex gap-12 items-stretch">
-            <div className="w-1/2 relative flex flex-col items-end overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-56 bg-gradient-to-b from-black to-black/0 z-10 pointer-events-none"></div>
-              <div className="flex relative">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
+            <div className="w-full md:w-1/2 relative flex flex-col items-end overflow-hidden">
+              <div className="hidden md:block absolute top-0 left-0 w-full h-56 bg-gradient-to-b from-black to-black/0 z-10 pointer-events-none"></div>
+              <div className="hidden md:flex relative">
                 {/* Blurred glow layer */}
                 <div className="absolute inset-0 flex">
                   <div className="h-56 w-48 rounded-br-[72px] border-r-8 border-[#FFD07E] -mr-32 blur-sm">
@@ -60,9 +60,9 @@ export default function DeployROISection() {
               </div>
             </div>
 
-            <div className="w-1/2 relative flex flex-col items-start overflow-hidden">
-              <div className="absolute top-0 right-0 w-full h-56 bg-gradient-to-b from-black to-black/0 z-10 pointer-events-none"></div>
-              <div className="flex relative">
+            <div className="w-full md:w-1/2 relative flex flex-col items-start overflow-hidden">
+              <div className="hidden md:block absolute top-0 right-0 w-full h-56 bg-gradient-to-b from-black to-black/0 z-10 pointer-events-none"></div>
+              <div className="hidden md:flex relative">
                 {/* Blurred glow layer */}
                 <div className="absolute inset-0 flex">
                   <div className="h-56 w-48 rounded-bl-[72px] border-l-8 border-blue-700 ml-8 blur-md">

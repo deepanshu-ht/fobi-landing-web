@@ -41,10 +41,10 @@ export default function Footer() {
           </div>
 
           {/* Main Footer Content */}
-          <div className="flex flex-col md:flex-row gap-12 md:gap-8 mb-12 justify-between">
-            {/* Left Column - Logo and Description */}
-            <div className="w-2/5">
-              <div className="mb-6">
+          <div className="flex flex-col gap-8 mb-12">
+            {/* Logo and Description */}
+            <div className="text-center md:text-left">
+              <div className="mb-6 flex justify-center md:justify-start">
                 <Image
                   src="/fobi.png"
                   alt="Fobi Logo"
@@ -53,21 +53,13 @@ export default function Footer() {
                   className="h-10 w-auto"
                 />
               </div>
-              <p className="text-sm text-white/70 mb-6 leading-relaxed">
+              <p className="text-sm text-white/70 mb-6 leading-relaxed max-w-md mx-auto md:mx-0">
                 Fobi is a technology and data intelligence company that uses AI-powered wallet pass solutions and analytics to help businesses boost customer engagement and streamline operations.
               </p>
-              <div className="space-y-2 text-sm">
-                <a href="mailto:support@fobi.com" className="block text-white hover:text-white transition-colors">
-                  support@fobi.com
-                </a>
-                <a href="tel:+19876542130" className="block text-white hover:text-white transition-colors">
-                  +1 987 6542 130
-                </a>
-              </div>
             </div>
 
-            {/* Middle Column - Links */}
-            <div className="flex flex-col sm:flex-row gap-8">
+            {/* Links Grid */}
+            <div className="grid grid-cols-2 gap-4 mx-auto">
               <div className="space-y-3">
                 <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
@@ -145,14 +137,14 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Right Column - TradingView Widget */}
-            <div className="flex justify-center md:justify-end">
+            {/* TradingView Widget */}
+            <div className="flex justify-center">
               <TradingViewWidget />
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="py-8 border-t border-white/10 bg-white/10 -mx-24">
+          <div className="py-2 md:py-8 border-t border-white/10 bg-white/10 -mx-24">
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-white/50">
               <p>©2025 All Rights Reserved by Fobi</p>
               <span className="hidden md:inline">|</span>
