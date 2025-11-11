@@ -125,21 +125,31 @@ export default function SuccessStoriesSection() {
   const currentStory = successStories[currentIndex];
 
   return (
-    <section className="relative py-24 px-6 md:px-16 bg-black overflow-hidden">
-      <div className="mx-auto max-w-6xl">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Success Stories
+    <section className="relative py-16 md:py-24 px-6 md:px-16 bg-black overflow-hidden">
+      <div className="mx-auto max-w-5xl">
+        {/* Dynamic Header */}
+        <div className="mb-8 md:mb-12 text-center px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+            Success Stories: {currentStory.company}
           </h2>
-          <p className="text-lg text-gray-400">
-            Trusted by industry leaders for mission-critical events
+          <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            {currentStory.description}
           </p>
         </div>
 
-        {/* Carousel */}
-        <div className="relative px-16 md:px-20">
-          <div className="overflow-hidden rounded-2xl bg-black border border-white/50">
+        {/* Carousel Container */}
+        <div className="relative flex items-center gap-2 md:gap-6">
+          {/* Left Arrow */}
+          <button
+            onClick={prevSlide}
+            className="flex-shrink-0 p-2 md:p-4 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 border border-white/30 hover:border-white/50"
+            aria-label="Previous story"
+          >
+            <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
+          </button>
+
+          {/* Video Container */}
+          <div className="flex-1 overflow-hidden rounded-xl md:rounded-2xl bg-black border border-white/50">
             <div
               className="flex transition-transform duration-300 ease-out"
               style={{
@@ -147,39 +157,37 @@ export default function SuccessStoriesSection() {
               }}
             >
               {successStories.map((story, index) => (
-                <div key={index} className="w-full flex-shrink-0 relative bg-gradient-to-br from-gray-900 to-black aspect-[16/9] h-96 md:h-[500px] flex items-center justify-center group">
+                <div key={index} className="w-full flex-shrink-0 relative bg-gradient-to-br from-gray-900 to-black aspect-[16/9] flex items-center justify-center group">
                   {/* Video Player */}
                   <video
                     ref={index === currentIndex ? videoRef : null}
                     src={story.videoUrl}
-                    className="absolute inset-0 w-full h-full object-cover cursor-pointer"
+                    className="absolute inset-0 w-full h-full object-cover"
                     onTimeUpdate={handleTimeUpdate}
                     onLoadedMetadata={handleLoadedMetadata}
                     onPlay={handlePlay}
                     onPause={handlePause}
-                    onClick={togglePlayPause}
                   />
 
-                  {/* Overlay */}
-                  {/* Play Button Center */}
+                  {/* Overlay - Click to play/pause */}
                   {index === currentIndex && (
                     <>
+                      {/* Clickable overlay for play/pause */}
+                      <div 
+                        className="absolute inset-0 z-10 cursor-pointer"
+                        onClick={togglePlayPause}
+                      />
+                      
                       {/* Center Play/Pause Button */}
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-300 z-10">
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-300 z-20">
                         {!isPlaying ? (
-                          <button
-                            onClick={togglePlayPause}
-                            className="w-20 h-20 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 hover:scale-110 pointer-events-auto"
-                          >
-                            <Play className="w-8 h-8 text-white fill-white ml-1" />
-                          </button>
+                          <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300">
+                            <Play className="w-6 h-6 md:w-8 md:h-8 text-white fill-white ml-1" />
+                          </div>
                         ) : (
-                          <button
-                            onClick={togglePlayPause}
-                            className="w-20 h-20 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 hover:scale-110 pointer-events-auto opacity-0 group-hover:opacity-100"
-                          >
-                            <Pause className="w-8 h-8 text-white fill-white" />
-                          </button>
+                          <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                            <Pause className="w-6 h-6 md:w-8 md:h-8 text-white fill-white" />
+                          </div>
                         )}
                       </div>
                     </>
@@ -187,7 +195,7 @@ export default function SuccessStoriesSection() {
 
                   {/* Video Controls - Bottom */}
                   {index === currentIndex && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4 md:p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4 md:p-6 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-30">
                       {/* Progress Bar */}
                       <div className="mb-4">
                         <input
@@ -251,25 +259,18 @@ export default function SuccessStoriesSection() {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 border border-white/20 hover:border-white/40"
-            aria-label="Previous story"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-
+          {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 border border-white/20 hover:border-white/40"
+            className="flex-shrink-0 p-2 md:p-4 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300 border border-white/30 hover:border-white/50"
             aria-label="Next story"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
           </button>
+        </div>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-8">
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-2 mt-8 md:mt-10">
             {successStories.map((_, index) => (
               <button
                 key={index}
@@ -289,7 +290,6 @@ export default function SuccessStoriesSection() {
                 aria-label={`Go to story ${index + 1}`}
               />
             ))}
-          </div>
         </div>
       </div>
     </section>
