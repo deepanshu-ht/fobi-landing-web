@@ -32,55 +32,59 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 h-[calc(100vh-140px)] px-6 py-12 md:px-16 md:py-20 md:pb-48">
-          <div className="mx-auto md:mx-24 h-full">
-            <div className="flex flex-col h-full justify-between md:gap-8">
+        <div className="relative z-10 h-[calc(100vh-140px)] px-6 md:px-16 md:py-20 md:pb-48 flex items-center md:items-stretch">
+          <div className="mx-auto md:mx-24 w-full md:h-full">
+            <div className="flex flex-col md:h-full justify-center md:justify-between gap-6 md:gap-8">
               {/* Main Content */}
-              <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left mx-auto md:mx-0 justify-center md:justify-end">
-                {/* Subtitle */}
-                <div className="">
-                  <p className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[52px] text-[#D9D9D9] leading-[1.2] tracking-[-0.01em]">
+              <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left mx-auto md:mx-0 md:justify-end mt-16">
+                {/* Title */}
+                <div className="space-y-2">
+                  <p className="text-2xl sm:text-3xl md:text-[48px] lg:text-[45px] text-[#D9D9D9] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-0.01em]">
                     While $350B Consulting Firms Were Learning AI...
                   </p>
-                  <h1 className="text-[48px] sm:text-[60px] md:text-[84px] lg:text-[65px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)] whitespace-nowrap">
+                  <h1 className="text-4xl sm:text-5xl md:text-[84px] lg:text-[56px] font-extrabold leading-tight md:leading-[1.08] tracking-tight md:tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)]">
                     We Were Building It
                   </h1>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-row gap-3 pt-2 justify-center md:justify-start">
-                  <a className="inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-5 md:px-7 py-3 md:py-4 text-sm md:text-base font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110" href="#">
+                <div className="flex flex-row gap-3 justify-center md:justify-start">
+                  <a className="inline-flex md:w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-4 md:px-4 py-3 md:py-4 text-sm md:text-xl font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110" href="#">
                     See Our AI Suite
                     <ArrowUpRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
                   </a>
-                  <a className="btn-outline inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg px-5 md:px-7 py-3 md:py-4 text-sm md:text-base text-white font-semibold transition-all duration-300 hover:bg-white/10 hover:brightness-110" href="#">
+                  <a className="btn-outline inline-flex md:w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg px-4 md:px-7 py-3 md:py-4 text-sm md:text-xl text-white font-semibold transition-all duration-300 hover:bg-white/10 hover:brightness-110" href="#">
                     Investor Deck
                     <ArrowUpRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-between items-center">
-                              {/* Description */}
-                <div className="max-w-lg text-sm md:text-base leading-relaxed pt-4 text-gray-400 text-center md:text-left">
+
+              {/* Desktop Description and Scroll */}
+              <div className="hidden md:flex justify-between items-center mt-72">
+                <div className="max-w-lg text-xl md:text-lg leading-relaxed text-white">
                   AI-native consulting. Real products. Measurable outcomes.
                   <br />
                   <span className="font-medium text-white">
                     From strategy to deployment in weeks, not quarters
                   </span>
                 </div>
-                              {/* Desktop: Right column scroll indicator */}
-              <div className="hidden md:flex items-center gap-3 text-xs text-gray-300 tracking-widest col-start-2 row-start-1 self-end justify-self-end">
-                <Mouse size={16} />
-                <span>SCROLL TO EXPLORE</span>
+                <div className="flex items-center gap-3 text-xl text-white tracking-widest">
+                  <Mouse size={20} />
+                  <span>SCROLL TO EXPLORE</span>
+                </div>
               </div>
 
+              {/* Mobile Description */}
+              <div className="md:hidden text-sm leading-relaxed text-white text-center">
+                <p>AI-native consulting. Real products. Measurable outcomes.</p>
+                <p className="font-semibold text-white mt-1">
+                  From strategy to deployment in weeks, not quarters
+                </p>
+              </div>
 
-            </div>
-
-            {/* Mobile: Bottom section with scroll indicator */}
-            <div className="md:hidden flex flex-col items-center gap-3 pb-8 mt-auto">
-              <div className="flex flex-col items-center gap-3 text-xs text-gray-300 tracking-widest">
+              {/* Mobile Scroll Indicator */}
+              <div className="md:hidden flex flex-col items-center gap-2 text-xs text-white tracking-widest mt-auto">
                 <svg
                   width="20"
                   height="20"
