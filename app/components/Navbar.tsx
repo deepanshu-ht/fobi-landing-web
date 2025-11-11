@@ -38,11 +38,11 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 px-6 py-6">
       <div className="mx-auto md:mx-6">
-        <div className="outline-gradient rounded-xl bg-black/60 backdrop-blur-xl px-8 py-4">
+        <div className="outline-gradient rounded-xl bg-black/60 backdrop-blur-xl px-4 md:px-8 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-2 md:gap-4">
-              <div className="relative w-24 h-8 md:w-32 md:h-10">
+              <div className="relative w-20 h-8 md:w-32 md:h-10">
                 <Image
                   src="/fobi.png"
                   alt="fobi"
@@ -52,11 +52,11 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex gap-2">
-                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-3 py-1 md:px-4 md:py-1.5">
+                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-1.5 py-0.5 md:px-4 md:py-1.5">
                   <span className="text-base md:text-lg">🇺🇸</span>
                   <span className="text-xs md:text-sm font-medium text-white">FOBIF</span>
                 </div>
-                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-3 py-1 md:px-4 md:py-1.5">
+                <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-1.5 py-0.5 md:px-4 md:py-1.5">
                   <span className="text-base md:text-lg">🇨🇦</span>
                   <span className="text-xs md:text-sm font-medium text-white">FOBI</span>
                 </div>

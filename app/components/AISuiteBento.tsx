@@ -1,7 +1,7 @@
 // "use client";
 
 import Image from "next/image";
-import { ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from "lucide-react";
 
 export default function AISuiteBento() {
   return (
@@ -48,8 +48,11 @@ export default function AISuiteBento() {
                   <p className="text-white/75 text-sm md:text-xs leading-relaxed">24/7 Intelligent Reception + Outbound Sales</p>
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Natural conversations. Real appointments booked.</p>
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Real estate. Healthcare. Sales qualification. Every call center operation globally</p>
-                  <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition">
-                    → Learn More
+                  <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
+                    <span className="relative">
+                      → Learn More
+                      <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -65,8 +68,11 @@ export default function AISuiteBento() {
                     
                     {/* <ShieldCheck className="h-8 w-8 text-blue-400 flex-shrink-0" /> */}
                   </div>
-                  <a className="mt-3 inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition">
-                    → Learn More
+                  <a className="mt-3 inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
+                    <span className="relative">
+                      → Learn More
+                      <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
                   </a>
                   <div className="flex mt-6 md:mt-8 items-center justify-center">
                     <div className="text-right text-sm md:text-base">Corporate Knowledge</div>
@@ -112,8 +118,11 @@ export default function AISuiteBento() {
                     </div>
                   </div>
                   
-                  <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition">
-                    → Learn More
+                  <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
+                    <span className="relative">
+                      → Learn More
+                      <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -122,12 +131,15 @@ export default function AISuiteBento() {
               <div className="flex flex-col lg:flex-row gap-4 w-full">
                 {/* AI Paralysis Banner - Hidden on mobile, shown as separate card */}
                 <div className="hidden lg:flex w-full lg:h-[11rem] lg:w-[35rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
-                  <div className="text-white text-sm font-semibold">
+                  <div className="text-white text-xl font-semibold relative py-2">
+                    <div className="absolute top-0 right-3 w-5 h-full rounded-r-3xl border border-l-0 border-[#1D4099]" />
+                    <div className="absolute top-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
+                    <div className="absolute bottom-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
                     AI Paralysis Is Costing Businesses Billions Every company knows they need AI. Most don't know where to start. We solve that
                   </div>
-                  <div className="hidden lg:flex items-center ml-4">
-                    <div className="w-16 h-px bg-white/20 mr-2" />
-                    <ArrowRight className="h-4 w-4 text-white/70" />
+                  <div className="hidden lg:flex items-center ml-4 text-[#3777FF]">
+                    <ArrowLeft className="h-8 w-8" />
+                    <div className="w-16 h-[2.7px] bg-[#3777FF] -ml-6" />
                   </div>
                 </div>
 
@@ -154,8 +166,11 @@ export default function AISuiteBento() {
               <p className="text-white/75 text-sm md:text-xs leading-relaxed">Website Redesigner + Builder. Minutes, Not Months.</p>
               <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed mb-3">200M+ small businesses need professional web presence. Traditional agencies: $5K-50K, 3–6 months. Fobi: Minutes</p>
               
-              <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition">
-                → Learn More
+              <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
+                <span className="relative">
+                  → Learn More
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                </span>
               </a>
             </div>
 
@@ -166,8 +181,11 @@ export default function AISuiteBento() {
                 {/* <Database className="h-8 w-8 text-blue-400" /> */}
               </div>
               <p className="text-white/75 text-sm md:text-xs leading-relaxed mb-3">Fobi's Insights Portal provides businesses with real-time analytics to understand customer behavior, attribution, and ROI measurement for informed decision-making</p>
-              <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition mb-4">
-                → Learn More
+              <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white transition group relative w-fit mb-4">
+                <span className="relative">
+                  → Learn More
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                </span>
               </a>
               <div className="flex justify-center md:-mx-6">
                 <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-[35%] md:w-full max-w-[160px] md:max-w-none scale-110 -ml-8" />
