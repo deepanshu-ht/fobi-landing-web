@@ -64,7 +64,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden items-center gap-8 md:flex">
+            <div className="hidden lg:flex items-center gap-6 lg:gap-8">
               <div className="relative group"
                 onMouseEnter={() => setOpenDropdown('solutions')}
                 onMouseLeave={() => setOpenDropdown(null)}
@@ -154,7 +154,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-white"
+              className="lg:hidden text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? (
@@ -169,7 +169,7 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="mt-4 flex flex-col gap-2 border-t border-white/10 pt-4 md:hidden">
+            <div className="mt-4 flex flex-col gap-2 border-t border-white/10 pt-4 lg:hidden">
               {/* Our Solutions Accordion */}
               <div>
                 <button

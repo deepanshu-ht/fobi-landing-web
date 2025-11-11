@@ -40,7 +40,7 @@ export default function AISuiteBento() {
                   <div className="flex justify-center mb-4 md:-mt-28 md:-mx-6">
                     <Image src="/aicallagent.png" alt="AI Call Agent" width={120} height={120} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
                   </div>
-                  <div className="flex items-start justify-between mb-2 md:mb-3">
+                  <div className="flex items-start justify-between mb-2 md:mb-3 -mt-10">
                     <h3 className="text-white text-xl md:text-2xl font-bold">AI Voice Agent</h3>
                     {/* <Phone className="w-full text-blue-400" /> */}
                   </div>
@@ -58,7 +58,7 @@ export default function AISuiteBento() {
                 <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
                     <div>
-                      <h3 className="mt-1 text-white text-xl md:text-xl font-bold">Corporate LLM</h3>
+                      <h3 className="mt-1 text-white text-xl md:text-3xl font-bold">Corporate LLM</h3>
                       <div className="text-sm md:text-xs text-white/60 mt-1">Your Private ChatGPT. Zero Data Leakage.</div>
                       <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Fortune 500 pharma using it now. Banking, Legal, Medical, Government. Commercially‑licensed. Canadian-hosted. 100% compliant</p>
                     </div>
@@ -68,7 +68,7 @@ export default function AISuiteBento() {
                   <a className="mt-3 inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition">
                     → Learn More
                   </a>
-                  <div className="flex mt-6 md:mt-10 items-center justify-center">
+                  <div className="flex mt-6 md:mt-8 items-center justify-center">
                     <div className="text-right text-sm md:text-base">Corporate Knowledge</div>
                     <Image src="/cllm.png" alt="Corporate LLM" width={120} height={120} className="w-60 md:w-72" />
                   </div>
@@ -78,7 +78,7 @@ export default function AISuiteBento() {
                 {/* AI Email Support Card */}
                 <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col min-h-[320px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
-                    <h3 className="text-white text-xl md:text-xl font-bold">AI Email Support</h3>
+                    <h3 className="text-white text-xl md:text-3xl font-bold">AI Email Support</h3>
                   </div>
                   <p className="text-white/75 text-sm md:text-xs leading-relaxed">Thousands of Inquiries Handled Automatically</p>
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed mb-4">Ugly Potato Day. 20K attendees. Zero human support needed. Ticketing. E-commerce. SaaS. Every repetitive customer inquiry eliminated</p>
@@ -148,7 +148,7 @@ export default function AISuiteBento() {
                 <Image src="/webbuild.png" alt="Web Builder" width={150} height={100} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
               </div>
               <div className="flex items-start justify-between mb-2 md:mb-3">
-                <h3 className="text-white text-xl md:text-lg font-bold">AI Web Presence</h3>
+                <h3 className="text-white text-xl md:text-2xl font-bold">AI Web Presence</h3>
                 {/* <Globe className="h-8 w-8 text-blue-400" /> */}
               </div>
               <p className="text-white/75 text-sm md:text-xs leading-relaxed">Website Redesigner + Builder. Minutes, Not Months.</p>
@@ -162,15 +162,15 @@ export default function AISuiteBento() {
             {/* Data Intelligence Card */}
             <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
               <div className="flex items-start justify-between mb-2 md:mb-3">
-                <h3 className="text-white text-xl md:text-lg font-bold leading-tight">Fobi's Data Intelligence<br/>Plug-and-play</h3>
+                <h3 className="text-xl md:text-3xl font-bold leading-tight bg-linear-to-br from-white to-white/30 bg-clip-text text-transparent">Fobi's Data Intelligence<br/>Plug-and-play</h3>
                 {/* <Database className="h-8 w-8 text-blue-400" /> */}
               </div>
               <p className="text-white/75 text-sm md:text-xs leading-relaxed mb-3">Fobi's Insights Portal provides businesses with real-time analytics to understand customer behavior, attribution, and ROI measurement for informed decision-making</p>
               <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white/80 hover:text-white transition mb-4">
                 → Learn More
               </a>
-              <div className="flex justify-center mt-auto md:-mx-6 md:-mb-6 mb-2">
-                <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
+              <div className="flex justify-center md:-mx-6">
+                <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-[35%] md:w-full max-w-[160px] md:max-w-none scale-110 -ml-8" />
               </div>
             </div>
 
