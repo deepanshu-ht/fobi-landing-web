@@ -7,6 +7,7 @@ import ROISection from "./components/ROISection";
 import WalletPassesSection from "./components/WalletPassesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import EnterpriseSection from "./components/EnterpriseSection";
+import SuccessStoriesSection from "./components/SuccessStoriesSection";
 
 export default function Home() {
   return (
@@ -21,35 +22,35 @@ export default function Home() {
             src="/bg.png"
             alt="Background"
             fill
-            className="object-cover"
+            className="object-cover -scale-x-100"
             priority
           />
-          <div className="" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black to-black/0" />
         </div>
 
         {/* Content */}
         <div className="relative z-10 h-[calc(100vh-140px)] px-6 py-12 md:px-16 md:py-20 md:pb-48">
-          <div className="mx-auto max-w-6xl h-full">
-            <div className="flex flex-col h-full justify-between md:grid md:grid-cols-[minmax(0,720px)_1fr] md:items-end md:gap-8">
+          <div className="mx-auto md:mx-24 h-full">
+            <div className="flex flex-col h-full justify-between md:gap-8">
               {/* Main Content */}
               <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left mx-auto md:mx-0 flex-1 justify-center md:justify-end">
                 {/* Subtitle */}
                 <div className="space-y-4 md:space-y-5">
-                  <p className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[52px] text-white/90 font-light leading-[1.2] tracking-[-0.01em]">
+                  <p className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[52px] text-white/90 leading-[1.2] tracking-[-0.01em]">
                     While $350B Consulting Firms Were Learning AI...
                   </p>
-                  <h1 className="text-[48px] sm:text-[60px] md:text-[84px] lg:text-[92px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)]">
+                  <h1 className="text-[48px] sm:text-[60px] md:text-[84px] lg:text-[65px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)] whitespace-nowrap">
                     We Were Building It
                   </h1>
                 </div>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 pt-2 justify-center md:justify-start">
-                  <a className="inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110">
+                  <a className="inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg bg-gradient-to-br from-[#4DA3FF] to-[#3E5BFF] px-5 md:px-7 py-3 md:py-4 text-sm md:text-base font-semibold text-white shadow-[0_14px_40px_-12px_rgba(62,91,255,0.65)] ring-1 ring-white/20 transition hover:brightness-110" href="#">
                     See Our AI Suite
                     <ArrowUpRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
                   </a>
-                  <a className="btn-outline inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base text-white font-semibold">
+                  <a className="btn-outline inline-flex w-fit items-center justify-center gap-1.5 md:gap-2 rounded-lg px-5 md:px-7 py-3 md:py-4 text-sm md:text-base text-white font-semibold transition-all duration-300 hover:bg-white/10 hover:brightness-110" href="#">
                     Investor Deck
                     <ArrowUpRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
                   </a>
@@ -132,6 +133,7 @@ export default function Home() {
       <ROISection />
       <TestimonialsSection />
       <EnterpriseSection />
+      <SuccessStoriesSection />
     </div>
   );
 }
