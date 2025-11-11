@@ -139,7 +139,7 @@ export default function SuccessStoriesSection() {
 
         {/* Carousel */}
         <div className="relative px-16 md:px-20">
-          <div className="overflow-hidden rounded-2xl bg-black">
+          <div className="overflow-hidden rounded-2xl bg-black border border-white/50">
             <div
               className="flex transition-transform duration-300 ease-out"
               style={{
@@ -152,42 +152,42 @@ export default function SuccessStoriesSection() {
                   <video
                     ref={index === currentIndex ? videoRef : null}
                     src={story.videoUrl}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover cursor-pointer"
                     onTimeUpdate={handleTimeUpdate}
                     onLoadedMetadata={handleLoadedMetadata}
                     onPlay={handlePlay}
                     onPause={handlePause}
+                    onClick={togglePlayPause}
                   />
 
                   {/* Overlay */}
                   {/* Play Button Center */}
                   {index === currentIndex && (
                     <>
-                      {/* Click anywhere to play/pause */}
-                      <div 
-                        className="absolute inset-0 cursor-pointer z-10"
-                        onClick={togglePlayPause}
-                      />
-                      
                       {/* Center Play/Pause Button */}
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button
-                          onClick={togglePlayPause}
-                          className="w-20 h-20 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 hover:scale-110 pointer-events-auto"
-                        >
-                          {isPlaying ? (
-                            <Pause className="w-8 h-8 text-white fill-white" />
-                          ) : (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-300 z-10">
+                        {!isPlaying ? (
+                          <button
+                            onClick={togglePlayPause}
+                            className="w-20 h-20 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 hover:scale-110 pointer-events-auto"
+                          >
                             <Play className="w-8 h-8 text-white fill-white ml-1" />
-                          )}
-                        </button>
+                          </button>
+                        ) : (
+                          <button
+                            onClick={togglePlayPause}
+                            className="w-20 h-20 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-all duration-300 hover:scale-110 pointer-events-auto opacity-0 group-hover:opacity-100"
+                          >
+                            <Pause className="w-8 h-8 text-white fill-white" />
+                          </button>
+                        )}
                       </div>
                     </>
                   )}
 
                   {/* Video Controls - Bottom */}
                   {index === currentIndex && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4 md:p-6 pointer-events-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4 md:p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
                       {/* Progress Bar */}
                       <div className="mb-4">
                         <input

@@ -8,6 +8,9 @@ import WalletPassesSection from "./components/WalletPassesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import EnterpriseSection from "./components/EnterpriseSection";
 import SuccessStoriesSection from "./components/SuccessStoriesSection";
+import DeployROISection from "./components/DeployROISection";
+import FobiAI3Section from "./components/FobiAI3Section";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -33,10 +36,10 @@ export default function Home() {
           <div className="mx-auto md:mx-24 h-full">
             <div className="flex flex-col h-full justify-between md:gap-8">
               {/* Main Content */}
-              <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left mx-auto md:mx-0 flex-1 justify-center md:justify-end">
+              <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left mx-auto md:mx-0 justify-center md:justify-end">
                 {/* Subtitle */}
-                <div className="space-y-4 md:space-y-5">
-                  <p className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[52px] text-white/90 leading-[1.2] tracking-[-0.01em]">
+                <div className="">
+                  <p className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[52px] text-[#D9D9D9] leading-[1.2] tracking-[-0.01em]">
                     While $350B Consulting Firms Were Learning AI...
                   </p>
                   <h1 className="text-[48px] sm:text-[60px] md:text-[84px] lg:text-[65px] font-extrabold leading-[1.08] tracking-[-0.02em] text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.55)] whitespace-nowrap">
@@ -55,22 +58,24 @@ export default function Home() {
                     <ArrowUpRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
                   </a>
                 </div>
-
-                {/* Description */}
-                <p className="max-w-lg text-sm md:text-base leading-relaxed pt-4 text-gray-400 text-center md:text-left">
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+                              {/* Description */}
+                <div className="max-w-lg text-sm md:text-base leading-relaxed pt-4 text-gray-400 text-center md:text-left">
                   AI-native consulting. Real products. Measurable outcomes.
                   <br />
                   <span className="font-medium text-white">
                     From strategy to deployment in weeks, not quarters
                   </span>
-                </p>
-              </div>
-
-              {/* Desktop: Right column scroll indicator */}
+                </div>
+                              {/* Desktop: Right column scroll indicator */}
               <div className="hidden md:flex items-center gap-3 text-xs text-gray-300 tracking-widest col-start-2 row-start-1 self-end justify-self-end">
                 <Mouse size={16} />
                 <span>SCROLL TO EXPLORE</span>
               </div>
+
+
             </div>
 
             {/* Mobile: Bottom section with scroll indicator */}
@@ -134,6 +139,9 @@ export default function Home() {
       <TestimonialsSection />
       <EnterpriseSection />
       <SuccessStoriesSection />
+      <DeployROISection />
+      <FobiAI3Section />
+      <Footer />
     </div>
   );
 }
