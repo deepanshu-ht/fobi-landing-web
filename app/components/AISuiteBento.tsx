@@ -11,7 +11,7 @@ export default function AISuiteBento() {
       
       {/* Blue glow effect - center blur ball */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[600px] h-[400px] md:w-[900px] md:h-[600px] bg-blue-600/25 rounded-full blur-[120px] md:blur-[150px]" />
+        <div className="w-[600px] h-[400px] md:w-[900px] md:h-[600px] bg-blue-600/10 rounded-full blur-[120px] md:blur-[150px]" />
       </div>
       
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-16">
@@ -22,13 +22,29 @@ export default function AISuiteBento() {
           <p className="text-sm md:text-base text-white/70 font-semibold">Deploy in weeks. See ROI immediately</p>
         </div>
 
+        {/* Subtle grid background with elliptical gradient fade - behind cards only */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-20 md:mt-24">
+          <div 
+            className="w-full h-full max-w-6xl"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+              `,
+              backgroundSize: '40px 40px',
+              maskImage: 'radial-gradient(ellipse 70% 50% at center, black 0%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 70% 50% at center, black 0%, transparent 70%)',
+            }}
+          />
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-4">
           {/* left side */}
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-4 w-full justify-between">
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col gap-4 w-full">
                 {/* $150B+ Card - Hidden on mobile */}
-                <div className="hidden lg:flex w-full lg:size-[16rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-6 flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
+                <div className="hidden lg:flex w-full lg:size-[16rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-6 flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
                   <div className="my-auto flex flex-col gap-4">
                     <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-5xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)]">$150B+</div>
                     <div className="text-[#3970FF] text-xl font-medium">Enterprise Software Automation Market</div>
@@ -36,7 +52,7 @@ export default function AISuiteBento() {
                 </div>
 
                 {/* AI Call Agent Card */}
-                <div className="w-full lg:w-[16rem] lg:h-[26rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
+                <div className="w-full lg:w-[16rem] lg:h-[26rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
                   <div className="flex justify-center mb-4 md:-mt-28 md:-mx-6">
                     <Image src="/aicallagent.png" alt="AI Call Agent" width={120} height={120} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
                   </div>
@@ -58,7 +74,7 @@ export default function AISuiteBento() {
               </div>
               <div className="flex flex-col gap-4 w-full">
                 {/* Corporate LLM Card */}
-                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
+                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
                     <div>
                       <h3 className="mt-1 text-white text-xl md:text-3xl font-bold">Corporate LLM</h3>
@@ -82,7 +98,7 @@ export default function AISuiteBento() {
                 </div>
 
                 {/* AI Email Support Card */}
-                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col min-h-[320px]">
+                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col min-h-[320px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
                     <h3 className="text-white text-xl md:text-3xl font-bold">AI Email Support</h3>
                   </div>
@@ -130,7 +146,7 @@ export default function AISuiteBento() {
             <div className="flex flex-col lg:flex-row gap-4 w-full">
               <div className="flex flex-col lg:flex-row gap-4 w-full">
                 {/* AI Paralysis Banner - Hidden on mobile, shown as separate card */}
-                <div className="hidden lg:flex w-full lg:h-[11rem] lg:w-[35rem] rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
+                <div className="hidden lg:flex w-full lg:h-[11rem] lg:w-[35rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
                   <div className="text-white text-xl font-semibold relative py-2">
                     <div className="absolute top-0 right-3 w-5 h-full rounded-r-3xl border border-l-0 border-[#1D4099]" />
                     <div className="absolute top-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
@@ -144,7 +160,7 @@ export default function AISuiteBento() {
                 </div>
 
                 {/* 4+ Production Card */}
-                <div className="w-full lg:h-[11rem] lg:w-[11rem] rounded-2xl bg-zinc-900/70 backdrop-blur-xl px-6 py-6 gradient-border-blue gap-3 flex flex-col min-h-[140px]" style={{ ['--og-width' as any]: '2px' }}>
+                <div className="w-full lg:h-[11rem] lg:w-[11rem] rounded-2xl bg-[#0A0A0A] backdrop-blur-xl px-6 py-6 gradient-border-blue gap-3 flex flex-col min-h-[140px]" style={{ ['--og-width' as any]: '2px' }}>
                   <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-5xl md:text-6xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)] mt-2">4+</div>
                   <div className="text-[#3970FF] text-sm md:text-[15px] font-semibold leading-tight">Production‑ready AI solutions</div>
                 </div>
@@ -155,7 +171,7 @@ export default function AISuiteBento() {
           {/* right side */}
           <div className="flex flex-col gap-4 w-full">
             {/* AI Web Presence Card */}
-            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
+            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
               <div className="flex justify-center mb-4 md:-mx-6">
                 <Image src="/webbuild.png" alt="Web Builder" width={150} height={100} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
               </div>
@@ -175,7 +191,7 @@ export default function AISuiteBento() {
             </div>
 
             {/* Data Intelligence Card */}
-            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
+            <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
               <div className="flex items-start justify-between mb-2 md:mb-3">
                 <h3 className="text-xl md:text-3xl font-bold leading-tight bg-linear-to-br from-white to-white/30 bg-clip-text text-transparent">Fobi's Data Intelligence<br/>Plug-and-play</h3>
                 {/* <Database className="h-8 w-8 text-blue-400" /> */}
@@ -193,7 +209,7 @@ export default function AISuiteBento() {
             </div>
 
             {/* AI Paralysis Card - Mobile Only */}
-            <div className="lg:hidden w-full rounded-2xl bg-zinc-900/70 border border-white/10 backdrop-blur-xl p-5 flex flex-col min-h-[140px]">
+            <div className="lg:hidden w-full rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 flex flex-col min-h-[140px]">
               <p className="text-white text-base font-semibold leading-relaxed">
                 AI Paralysis Is Costing Businesses Billions Every company knows they need AI. Most don't know where to start. We solve that
               </p>

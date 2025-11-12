@@ -163,7 +163,7 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: var(--og-width, 2px);
-  background: linear-gradient(135deg, #4DA3FF 0%, #8B5CF6 100%);
+  background: linear-gradient(0deg, #2856CF 0%, #7C1699 100%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);

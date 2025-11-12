@@ -45,7 +45,7 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
           <p className="text-sm md:text-3xl text-white/70 font-semibold">{subtitle}</p>
         </div>
 
-        <div className="relative mt-10 md:mt-14 min-h-[520px] md:min-h-[560px]">
+        <div className="relative mt-10 md:mt-14 min-h-[520px] md:min-h-[560px] -mx-10">
           <div className="relative z-10 flex justify-center gap-1 md:gap-4 pt-6 md:pt-8">
             <div className='flex flex-col gap-3 md:gap-4 ml-0 md:-ml-36 w-[10%] md:w-81'>
               <div className='mt-4 md:mt-8 h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_100%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
@@ -53,19 +53,19 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
               <div className='h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_0%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
             </div>
             <div className='flex flex-col gap-3 md:gap-4 w-[38%] md:w-81'>
-              <div className='-mt-0 md:-mt-8 h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_120%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
+              <div className='-mt-4 md:-mt-8 h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_120%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
               {leftItems[0] && (
-                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-5 md:p-6'>
-                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-2xl sm:text-3xl md:text-4xl font-extrabold'>{leftItems[0].value}</div>
-                  <div className='text-white font-bold mt-1'>{leftItems[0].label}</div>
-                  <p className='text-white/70 text-sm mt-2'>{leftItems[0].description}</p>
+                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 px-4 py-3 md:p-6'>
+                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-xl sm:text-3xl md:text-4xl font-extrabold'>{leftItems[0].value}</div>
+                  <div className='text-white font-bold'>{leftItems[0].label}</div>
+                  <p className='text-white/70 text-[10px] md:text-sm'>{leftItems[0].description}</p>
                 </div>
               )}
               {leftItems[1] && (
-                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-5 md:p-6'>
-                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-2xl sm:text-3xl md:text-4xl font-extrabold'>{leftItems[1].value}</div>
-                  <div className='text-white font-bold mt-1'>{leftItems[1].label}</div>
-                  <p className='text-white/70 text-sm mt-2'>{leftItems[1].description}</p>
+                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 px-4 py-3 md:p-6'>
+                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-xl sm:text-3xl md:text-4xl font-extrabold'>{leftItems[1].value}</div>
+                  <div className='text-white font-bold'>{leftItems[1].label}</div>
+                  <p className='text-white/70 text-[10px] md:text-sm'>{leftItems[1].description}</p>
                 </div>
               )}
               <div className='h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_-20%,rgba(227,236,242,0.14)_0%,rgba(227,236,242,0)_60%)]'/>
@@ -73,17 +73,17 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
             <div className='flex flex-col gap-3 md:gap-4 w-[39%] md:w-81'>
               <div className='md:-mt-24 h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_120%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
               {rightItems[0] && (
-                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-5 md:p-6'>
-                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-2xl sm:text-3xl md:text-4xl font-extrabold'>{rightItems[0].value}</div>
-                  <div className='text-white font-bold mt-1'>{rightItems[0].label}</div>
-                  <p className='text-white/70 text-sm mt-2'>{rightItems[0].description}</p>
+                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 px-4 py-3 md:p-6'>
+                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-xl sm:text-3xl md:text-4xl font-extrabold'>{rightItems[0].value}</div>
+                  <div className='text-white font-bold'>{rightItems[0].label}</div>
+                  <p className='text-white/70 text-[10px] md:text-sm'>{rightItems[0].description}</p>
                 </div>
               )}
               {rightItems[1] && (
-                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 p-5 md:p-6'>
-                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-2xl sm:text-3xl md:text-4xl font-extrabold'>{rightItems[1].value}</div>
-                  <div className='text-white font-bold mt-1'>{rightItems[1].label}</div>
-                  <p className='text-white/70 text-sm mt-2'>{rightItems[1].description}</p>
+                <div className='font-[family-name:var(--font-plus-jakarta-sans)] w-full md:w-81 rounded-xl bg-zinc-900/70 backdrop-blur-xl border border-white/10 px-4 py-3 md:p-6'>
+                  <div className='bg-gradient-to-t from-[#397BFF] to-[#0F51FF] text-transparent bg-clip-text text-xl sm:text-3xl md:text-4xl font-extrabold'>{rightItems[1].value}</div>
+                  <div className='text-white font-bold'>{rightItems[1].label}</div>
+                  <p className='text-white/70 text-[10px] md:text-sm'>{rightItems[1].description}</p>
                 </div>
               )}
               <div className='h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_140%_at_50%_-20%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
