@@ -68,10 +68,10 @@ export default function TestimonialsSection() {
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
             They Needed Proof, Not Promises
           </h2>
-          <p className="text-lg md:text-xl text-gray-400">
+          <p className="text-lg md:text-2xl text-gray-400 font-bold">
             From Hollywood to horse parks, they chose execution over promises
           </p>
         </div>
@@ -86,8 +86,8 @@ export default function TestimonialsSection() {
               }}
             >
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-2">
-                  <div className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] p-8 backdrop-blur-sm hover:border-white/20 transition-all duration-300 flex flex-col">
+                <div key={index} className="w-full flex-shrink-0 h-full my-auto px-2">
+                  <div className="group relative rounded-2xl border border-white/20 bg-black p-8 backdrop-blur-sm hover:border-white/20 transition-all duration-300 flex flex-col">
                     {/* Gradient overlay on hover */}
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
@@ -104,7 +104,7 @@ export default function TestimonialsSection() {
                       </p>
 
                       {/* Author - stays at bottom */}
-                      <div className="flex items-center gap-4 pt-6 mt-6 border-t border-white/10">
+                      <div className="flex items-center gap-4 pt-6 mt-6">
                         <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                           <Image
                             src={testimonial.image}
@@ -165,7 +165,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] p-8 md:p-10 backdrop-blur-sm hover:border-white/20 transition-all duration-300 flex flex-col"
+              className="group relative rounded-2xl border border-white/20 bg-black p-8 md:p-10 backdrop-blur-sm hover:border-white/30 transition-all duration-300 flex flex-col"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -178,12 +178,12 @@ export default function TestimonialsSection() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed flex-grow">
+                <p className="text-sm md:text-base text-[#D8D8D8] leading-relaxed flex-grow">
                   {testimonial.description}
                 </p>
 
                 {/* Author - stays at bottom */}
-                <div className="flex items-center gap-4 pt-6 mt-6 border-t border-white/10">
+                <div className="flex items-center gap-4 pt-6 mt-6">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                     <Image
                       src={testimonial.image}
@@ -194,7 +194,7 @@ export default function TestimonialsSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-white">{testimonial.name}</p>
-                    <p className="text-xs md:text-sm text-gray-400">
+                    <p className="text-xs md:text-sm text-white/50">
                       {testimonial.role}
                     </p>
                   </div>

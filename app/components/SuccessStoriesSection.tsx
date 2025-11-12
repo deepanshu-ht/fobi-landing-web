@@ -38,7 +38,7 @@ const successStories: SuccessStory[] = [
 export default function SuccessStoriesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -129,10 +129,10 @@ export default function SuccessStoriesSection() {
       <div className="mx-auto max-w-5xl">
         {/* Dynamic Header */}
         <div className="mb-8 md:mb-12 text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-1 md:mb-3">
             Success Stories: {currentStory.company}
           </h2>
-          <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base lg:text-2xl text-white/80 max-w-2xl mx-auto font-bold">
             {currentStory.description}
           </p>
         </div>
