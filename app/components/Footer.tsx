@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Main Footer Content */}
-          <div className="flex flex-col gap-8 mb-12">
+          <div className="flex flex-col md:flex-row gap-8 mb-12">
             {/* Logo and Description */}
             <div className="text-center md:text-left">
               <div className="mb-6 flex justify-center md:justify-start">
@@ -56,47 +56,57 @@ export default function Footer() {
               <p className="text-sm text-white/70 mb-6 leading-relaxed max-w-md mx-auto md:mx-0">
                 Fobi is a technology and data intelligence company that uses AI-powered wallet pass solutions and analytics to help businesses boost customer engagement and streamline operations.
               </p>
+              
+              {/* Contact Information */}
+              <div className="space-y-3 text-center md:text-left">
+                <a href="mailto:support@fobi.com" className="block text-lg md:text-xl text-white hover:text-white/80 transition-colors">
+                  support@fobi.com
+                </a>
+                <a href="tel:+19876542130" className="block text-lg md:text-xl text-white hover:text-white/80 transition-colors">
+                  +1 987 6542 130
+                </a>
+              </div>
             </div>
 
             {/* Links Grid */}
             <div className="grid grid-cols-2 gap-4 mx-auto">
-              <div className="space-y-3">
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+              <div className="space-y-5">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Solutions
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Pricing
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Resources
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     About
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Contact
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Investor Presentation
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -105,29 +115,29 @@ export default function Footer() {
                 </a>
               </div>
 
-              <div className="space-y-3">
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+              <div className="space-y-5">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Instagram
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     YouTube
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     Twitter
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                   </span>
                   <ArrowUpRight className="w-3 h-3 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="#" className="flex items-center gap-1 text-sm text-white hover:text-white transition-colors group relative w-fit">
+                <a href="#" className="flex items-center gap-1 text-lg text-white hover:text-white transition-colors group relative w-fit">
                   <span className="relative">
                     LinkedIn
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -144,7 +154,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="py-2 md:py-8 border-t border-white/10 bg-white/10 -mx-24">
+          <div className="py-2 md:py-4 border-t border-white/10 bg-white/10 -mx-96">
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-white/50">
               <p>©2025 All Rights Reserved by Fobi</p>
               <span className="hidden md:inline">|</span>

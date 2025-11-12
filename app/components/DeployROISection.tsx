@@ -20,15 +20,15 @@ export default function DeployROISection() {
               <div className="hidden md:flex relative">
                 {/* Blurred glow layer */}
                 <div className="absolute inset-0 flex">
-                  <div className="h-56 w-48 rounded-br-[72px] border-r-8 border-[#FFD07E] -mr-32 blur-sm">
+                  <div className="h-56 w-48 rounded-br-[72px] border-r-16 border-[#FFD07E] -mr-32 blur-sm">
                   </div>
-                  <div className="h-56 w-48 rounded-br-[60px] border-r-8 border-[#FFD07E] mr-8 blur-sm">
+                  <div className="h-56 w-48 rounded-br-[60px] border-r-16 border-[#FFD07E] mr-8 blur-sm">
                   </div>
                 </div>
                 {/* Sharp border layer */}
-                <div className="h-56 w-48 rounded-br-[72px] border-r-4 border-[#FFD07E] -mr-32">
+                <div className="h-56 w-48 rounded-br-[72px] border-r-8 border-[#FFD07E] -mr-32">
                 </div>
-                <div className="h-56 w-48 rounded-br-[60px] border-r-4 border-[#FFD07E] mr-8">
+                <div className="h-56 w-48 rounded-br-[60px] border-r-8 border-[#FFD07E] mr-8">
                 </div>
               </div>
               <div className="rounded-2xl border border-[#FFD07E] bg-gradient-to-b from-white/5 to-white/[0.03] p-6 md:p-8 w-full h-full flex flex-col">
@@ -37,7 +37,7 @@ export default function DeployROISection() {
                 </h3>
                 <p className="text-white/80 mb-6">Ready to deploy AI that delivers ROI?</p>
                 <div className="text-white/90 text-sm md:text-base mb-6">
-                  <p className="font-semibold mb-3">Offerings:</p>
+                  <p className="font-semibold mb-3 text-lg">Offerings:</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-3">
                       <span className="mt-2 h-2 w-2 rounded-full bg-[#FFD07E]" />
@@ -53,7 +53,7 @@ export default function DeployROISection() {
                     </li>
                   </ul>
                 </div>
-                <a href="#" className="mt-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[#9E8150] hover:bg-[#9E8150]/80 text-white font-semibold px-5 py-3 border border-[#FFD07E]/50 transition-colors w-full">
+                <a href="#" className="mt-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[#9E8150] hover:bg-[#9E8150]/80 text-white px-5 py-3 border border-[#FFD07E]/50 transition-colors w-full font-bold text-xl">
                   <Calendar className="h-4 w-4" />
                   Schedule Strategic Demo
                 </a>
@@ -65,15 +65,15 @@ export default function DeployROISection() {
               <div className="hidden md:flex relative">
                 {/* Blurred glow layer */}
                 <div className="absolute inset-0 flex">
-                  <div className="h-56 w-48 rounded-bl-[72px] border-l-8 border-blue-700 ml-8 blur-md">
+                  <div className="h-56 w-48 rounded-bl-[72px] border-l-16 border-blue-700 ml-8 blur-md">
                   </div>
-                  <div className="h-56 w-48 rounded-bl-[60px] border-l-8 border-blue-700 -ml-32 blur-md">
+                  <div className="h-56 w-48 rounded-bl-[60px] border-l-16 border-blue-700 -ml-32 blur-md">
                   </div>
                 </div>
                 {/* Sharp border layer */}
-                <div className="h-56 w-48 rounded-bl-[72px] border-l-4 border-blue-700 ml-8">
+                <div className="h-56 w-48 rounded-bl-[72px] border-l-8 border-blue-700 ml-8">
                 </div>
-                <div className="h-56 w-48 rounded-bl-[60px] border-l-4 border-blue-700 -ml-32">
+                <div className="h-56 w-48 rounded-bl-[60px] border-l-8 border-blue-700 -ml-32">
                 </div>
               </div>
               <div className="rounded-2xl border-2 border-blue-700 bg-gradient-to-b from-white/5 to-white/[0.03] p-6 md:p-8 w-full h-full flex flex-col">
@@ -82,7 +82,7 @@ export default function DeployROISection() {
                 </h3>
                 <p className="text-white/80 mb-6">Ready to invest in execution?</p>
                 <div className="text-white/90 text-sm md:text-base mb-6">
-                  <p className="font-semibold mb-3">Investment Thesis:</p>
+                  <p className="font-semibold mb-3 text-lg">Investment Thesis:</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-3">
                       <span className="mt-2 h-2 w-2 rounded-full bg-[#3E5BFF]" />
@@ -99,11 +99,11 @@ export default function DeployROISection() {
                   </ul>
                 </div>
                 <div className="flex flex-col w-full gap-3 mt-auto">
-                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg text-[#3E5BFF] font-semibold px-5 py-3 transition-colors">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg text-[#3E5BFF] font-semibold px-5 py-3 transition-colors text-xl">
                     <Download className="h-4 w-4" />
                     Download Investor Deck
                   </a>
-                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#3E5BFF] hover:brightness-110 text-white font-semibold px-5 py-3 border border-[#3E5BFF]/60 transition-colors">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-t from-[#3D85FF] to-[#1154FF] hover:brightness-110 text-white font-bold text-xl px-5 py-3 border border-[#3E5BFF]/60 transition-colors">
                     <Users className="h-4 w-4" />
                     Join Investor Community
                   </a>

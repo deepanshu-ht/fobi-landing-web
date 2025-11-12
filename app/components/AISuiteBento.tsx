@@ -65,7 +65,7 @@ export default function AISuiteBento() {
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Natural conversations. Real appointments booked.</p>
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Real estate. Healthcare. Sales qualification. Every call center operation globally</p>
                   <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
-                    <span className="relative">
+                    <span className="relative font-semibold">
                       → Learn More
                       <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                     </span>
@@ -85,7 +85,7 @@ export default function AISuiteBento() {
                     {/* <ShieldCheck className="h-8 w-8 text-blue-400 flex-shrink-0" /> */}
                   </div>
                   <a className="mt-3 inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
-                    <span className="relative">
+                    <span className="relative font-semibold">
                       → Learn More
                       <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                     </span>
@@ -104,10 +104,15 @@ export default function AISuiteBento() {
                   </div>
                   <p className="text-white/75 text-sm md:text-xs leading-relaxed">Thousands of Inquiries Handled Automatically</p>
                   <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed mb-4">Ugly Potato Day. 20K attendees. Zero human support needed. Ticketing. E-commerce. SaaS. Every repetitive customer inquiry eliminated</p>
-                  
+                  <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
+                    <span className="relative font-semibold">
+                      → Learn More
+                      <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
                   {/* Email Graphic */}
                   <div className="relative mt-auto mb-4">                    
-                    <div className="flex items-end gap-4">
+                    <div className="flex items-end gap-4 justify-end">
                       {/* Profile Image */}
                       <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex-shrink-0 overflow-hidden">
                         <div className="w-full h-full bg-zinc-800/50">
@@ -116,30 +121,28 @@ export default function AISuiteBento() {
                       </div>
                       
                       {/* Email Card */}
-                      <div className="flex-1 bg-zinc-800/50 rounded-xl p-4 border border-white/5 mb-6">
+                      <div className=" bg-zinc-800 rounded-xl p-4 border border-white/5 mb-6 w-56 relative">
                         <div className="flex items-start gap-3">
                           {/* Email Icon */}
-                          <div className="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0">
-                            <Mail className="w-6 h-6 text-black" />
+                          <div className="w-12 h-12 rounded flex items-center justify-center flex-shrink-0 -mt-2">
+                            <svg width="48" height="48" viewBox="50 20 60 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                              <path d="M103.541 27.8354C103.541 26.7309 102.646 25.8354 101.541 25.8354H56.5413C55.4367 25.8354 54.5413 26.7309 54.5413 27.8354V63.8354C54.5413 64.94 55.4367 65.8354 56.5413 65.8354H101.541C102.646 65.8354 103.541 64.94 103.541 63.8354V27.8354ZM98.6413 34.7388C98.6413 35.4219 98.2926 36.0578 97.7167 36.4251L80.1167 47.6496C79.4608 48.0679 78.6218 48.0679 77.9658 47.6496L60.3658 36.4251C59.7899 36.0578 59.4413 35.4219 59.4413 34.7388V34.4831C59.4413 32.904 61.1853 31.9477 62.5167 32.7968L77.9658 42.6496C78.6218 43.0679 79.4608 43.0679 80.1167 42.6496L95.5658 32.7968C96.8972 31.9477 98.6413 32.904 98.6413 34.4831V34.7388Z" fill="#316BFF"/>
+                              <path d="M56.5413 26.0854H101.541C102.508 26.0854 103.291 26.869 103.291 27.8354V63.8354C103.291 64.8019 102.508 65.5854 101.541 65.5854H56.5413C55.5748 65.5854 54.7913 64.8019 54.7913 63.8354V27.8354C54.7913 26.869 55.5748 26.0854 56.5413 26.0854ZM98.8909 34.4829C98.8907 32.7066 96.9296 31.6314 95.4319 32.5864L79.9827 42.439C79.4087 42.805 78.6738 42.805 78.0999 42.439L62.6506 32.5864C61.1529 31.6314 59.1918 32.7066 59.1917 34.4829V34.7388C59.1917 35.5073 59.5838 36.223 60.2317 36.6362L77.8313 47.8608C78.5692 48.3313 79.5134 48.3313 80.2512 47.8608L97.8508 36.6362C98.4988 36.223 98.8909 35.5073 98.8909 34.7388V34.4829Z" stroke="#0E51FF" strokeWidth="0.5"/>
+                            </svg>
                           </div>
                           
                           {/* Email Lines */}
-                          <div className="flex-1 space-y-2">
-                            <div className="h-3 bg-white/10 rounded-full w-3/4"></div>
-                            <div className="h-3 bg-white/10 rounded-full w-1/2"></div>
-                            <div className="h-3 bg-white/10 rounded-full w-full"></div>
+                          <div className="flex-1 space-y-3">
+                            <div className="h-2 bg-white/10 rounded-full w-full"></div>
+                            <div className="h-2 bg-white/10 rounded-full w-full"></div>
+                            <div className="h-2 bg-white/10 rounded-full w-[145%] -ml-14 mt-4"></div>
                           </div>
+                          {/* <div className="absolute w-4 h-4 bottom-0 left-0 bg-zinc-800 -ml-2 border-tr -rounded-xl "></div> */}
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
-                    <span className="relative">
-                      → Learn More
-                      <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -183,7 +186,7 @@ export default function AISuiteBento() {
               <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed mb-3">200M+ small businesses need professional web presence. Traditional agencies: $5K-50K, 3–6 months. Fobi: Minutes</p>
               
               <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
-                <span className="relative">
+                <span className="relative font-semibold">
                   → Learn More
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </span>
@@ -198,7 +201,7 @@ export default function AISuiteBento() {
               </div>
               <p className="text-white/75 text-sm md:text-xs leading-relaxed mb-3">Fobi's Insights Portal provides businesses with real-time analytics to understand customer behavior, attribution, and ROI measurement for informed decision-making</p>
               <a className="inline-flex items-center gap-1 text-sm md:text-xs text-white transition group relative w-fit mb-4">
-                <span className="relative">
+                <span className="relative font-semibold">
                   → Learn More
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </span>
