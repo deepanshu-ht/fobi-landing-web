@@ -7,11 +7,11 @@ export default function AISuiteBento() {
   return (
     <section className="relative py-16 md:py-28 bg-black overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-blue-900/10 to-black" />
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-blue-900/10 to-black" /> */}
       
       {/* Blue glow effect - center blur ball */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[600px] h-[400px] md:w-[900px] md:h-[600px] bg-blue-600/10 rounded-full blur-[120px] md:blur-[150px]" />
+        <div className="w-[600px] h-[400px] md:w-[900px] md:h-[400px] bg-blue-600/10 rounded-full blur-[120px] md:blur-[150px]" />
       </div>
       
       <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-16">
@@ -44,42 +44,51 @@ export default function AISuiteBento() {
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col gap-4 w-full">
                 {/* $150B+ Card - Hidden on mobile */}
-                <div className="hidden lg:flex w-full lg:size-[16rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-6 flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
-                  <div className="my-auto flex flex-col gap-4">
-                    <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-5xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)]">$150B+</div>
-                    <div className="text-[#3970FF] text-xl font-medium">Enterprise Software Automation Market</div>
+                <div className="flex w-full lg:size-[16rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-6 flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
+                  <div className="my-auto flex flex-col md:gap-4">
+                    <div className="bg-gradient-to-t from-[#418DFF] to-[#0F51FF] bg-clip-text text-transparent text-3xl md:text-5xl font-extrabold font-[family-name:var(--font-plus-jakarta-sans)]">$150B+</div>
+                    <div className="text-[#3970FF] text-lg md:text-xl font-medium">Enterprise Software Automation Market</div>
                   </div>
                 </div>
 
                 {/* AI Call Agent Card */}
-                <div className="w-full lg:w-[16rem] lg:h-[26rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
-                  <div className="flex justify-center mb-4 md:-mt-28 md:-mx-6">
+                <div className="w-full lg:w-[16rem] lg:h-[26rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[320px]">
+                  <div className="hidden md:flex justify-center mb-4 md:-mt-28 md:-mx-6">
                     <Image src="/aicallagent.png" alt="AI Call Agent" width={120} height={120} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
                   </div>
-                  <div className="flex items-start justify-between mb-2 md:mb-3 -mt-10">
+                  <div className="flex items-start justify-between mb-2 md:mb-3 md:-mt-10">
                     <h3 className="text-white text-xl md:text-2xl font-bold">AI Voice Agent</h3>
                     {/* <Phone className="w-full text-blue-400" /> */}
                   </div>
 
-                  <p className="text-white/75 text-sm md:text-xs leading-relaxed">24/7 Intelligent Reception + Outbound Sales</p>
-                  <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Natural conversations. Real appointments booked.</p>
-                  <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Real estate. Healthcare. Sales qualification. Every call center operation globally</p>
+                  <p className="text-white/75 text-xs md:leading-relaxed">24/7 Intelligent Reception + Outbound Sales</p>
+                  <p className="md:mt-2 text-white/75 text-xs md:leading-relaxed">Natural conversations. Real appointments booked.</p>
+                  <p className="md:mt-2 text-white/75 text-xs md:leading-relaxed">Real estate. Healthcare. Sales qualification. Every call center operation globally</p>
                   <a className="mt-auto inline-flex items-center gap-1 text-sm md:text-xs text-white group relative w-fit transition">
                     <span className="relative font-semibold">
                       → Learn More
                       <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                     </span>
                   </a>
+                  <div className="flex justify-end">
+                    <Image
+                      src="/vagentm.png"
+                      alt="AI Call Agent"
+                      width={120}
+                      height={120}
+                      className="w-1/2 md:hidden"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-4 w-full">
                 {/* Corporate LLM Card */}
-                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
+                <div className="w-full lg:h-[21rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
                     <div>
                       <h3 className="mt-1 text-white text-xl md:text-3xl font-bold">Corporate LLM</h3>
-                      <div className="text-sm md:text-xs text-white/60 mt-1">Your Private ChatGPT. Zero Data Leakage.</div>
-                      <p className="mt-2 text-white/75 text-sm md:text-xs leading-relaxed">Fortune 500 pharma using it now. Banking, Legal, Medical, Government. Commercially‑licensed. Canadian-hosted. 100% compliant</p>
+                      <div className="text-xs md:text-xs text-white/60 mt-1">Your Private ChatGPT. Zero Data Leakage.</div>
+                      <p className="md:mt-2 text-white/75 text-xs md:text-sm md:text-xs leading-relaxed">Fortune 500 pharma using it now. Banking, Legal, Medical, Government. Commercially‑licensed. Canadian-hosted. 100% compliant</p>
                     </div>
                     
                     {/* <ShieldCheck className="h-8 w-8 text-blue-400 flex-shrink-0" /> */}
@@ -98,7 +107,7 @@ export default function AISuiteBento() {
                 </div>
 
                 {/* AI Email Support Card */}
-                <div className="w-full lg:h-[21rem] lg:w-[30rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col min-h-[320px]">
+                <div className="w-full lg:h-[21rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col min-h-[320px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
                     <h3 className="text-white text-xl md:text-3xl font-bold">AI Email Support</h3>
                   </div>
@@ -149,7 +158,7 @@ export default function AISuiteBento() {
             <div className="flex flex-col lg:flex-row gap-4 w-full">
               <div className="flex flex-col lg:flex-row gap-4 w-full">
                 {/* AI Paralysis Banner - Hidden on mobile, shown as separate card */}
-                <div className="hidden lg:flex w-full lg:h-[11rem] lg:w-[35rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
+                <div className="hidden lg:flex w-full lg:h-[11rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
                   <div className="text-white text-xl font-semibold relative py-2">
                     <div className="absolute top-0 right-3 w-5 h-full rounded-r-3xl border border-l-0 border-[#1D4099]" />
                     <div className="absolute top-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
@@ -175,7 +184,7 @@ export default function AISuiteBento() {
           <div className="flex flex-col gap-4 w-full">
             {/* AI Web Presence Card */}
             <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
-              <div className="flex justify-center mb-4 md:-mx-6">
+              <div className="hidden md:flex justify-center mb-4 md:-mx-6">
                 <Image src="/webbuild.png" alt="Web Builder" width={150} height={100} className="w-[35%] md:w-full max-w-[140px] md:max-w-none" />
               </div>
               <div className="flex items-start justify-between mb-2 md:mb-3">
@@ -191,6 +200,15 @@ export default function AISuiteBento() {
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </span>
               </a>
+              <div className="-mx-6 -mb-8 md:hidden">
+                <Image
+                  src={"/aiwebm.png"}
+                  alt="AI Web Presence"
+                  width={150}
+                  height={100}
+                  className="w-full md:hidden"
+                />  
+              </div>
             </div>
 
             {/* Data Intelligence Card */}
@@ -206,8 +224,8 @@ export default function AISuiteBento() {
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </span>
               </a>
-              <div className="flex justify-center md:-mx-6">
-                <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-[35%] md:w-full max-w-[160px] md:max-w-none scale-110 -ml-8" />
+              <div className="flex justify-end md:justify-center md:-mx-6 -mt-12 -mb-4 md:my-0">
+                <Image src="/dataintelligence.png" alt="Data Intelligence" width={150} height={100} className="w-[50%] md:w-full max-w-[160px] md:max-w-none scale-110 -ml-8" />
               </div>
             </div>
 

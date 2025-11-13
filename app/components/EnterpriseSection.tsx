@@ -40,6 +40,7 @@ export default function EnterpriseSection() {
                     height={80}
                     className="h-12 md:h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                   />
+                  <div className='ml-8 w-px h-12 bg-white/30'></div>
                 </div>
               ))}
             </Marquee>

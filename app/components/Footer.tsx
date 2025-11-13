@@ -17,14 +17,14 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 md:px-16 pt-16 md:pt-20">
+      <div className="relative z-10 px-6 lg:px-16 pt-16 lg:pt-20">
         <div className="mx-auto max-w-7xl">
           {/* Disclaimer Section */}
           <div className="mb-16">
             <h3 className="text-sm font-semibold text-white/90 mb-4 tracking-wide">
               FORWARD LOOKING STATEMENTS DISCLAIMER
             </h3>
-            <div className="text-xs md:text-sm text-white/60 space-y-4 leading-relaxed">
+            <div className="text-xs lg:text-sm text-white/60 space-y-4 leading-relaxed">
               <p>
                 This website may contain statements regarding the future business, financial condition, results of operations and strategy of Fobi AI Inc. (the "Company") that are forward-looking in nature. These statements are based on the Company's current expectations, beliefs, assumptions and information available to its management at the time they are made.
               </p>
@@ -41,10 +41,10 @@ export default function Footer() {
           </div>
 
           {/* Main Footer Content */}
-          <div className="flex flex-col md:flex-row gap-8 mb-12">
+          <div className="flex flex-col lg:flex-row gap-8 mb-12">
             {/* Logo and Description */}
-            <div className="text-center md:text-left">
-              <div className="mb-6 flex justify-center md:justify-start">
+            <div className="text-center lg:text-left">
+              <div className="mb-6 flex justify-center lg:justify-start">
                 <Image
                   src="/fobi.png"
                   alt="Fobi Logo"
@@ -53,16 +53,16 @@ export default function Footer() {
                   className="h-10 w-auto"
                 />
               </div>
-              <p className="text-sm text-white/70 mb-6 leading-relaxed max-w-md mx-auto md:mx-0">
+              <p className="text-sm text-white/70 mb-6 leading-relaxed max-w-md mx-auto lg:mx-0">
                 Fobi is a technology and data intelligence company that uses AI-powered wallet pass solutions and analytics to help businesses boost customer engagement and streamline operations.
               </p>
               
               {/* Contact Information */}
-              <div className="space-y-3 text-center md:text-left">
-                <a href="mailto:support@fobi.com" className="block text-lg md:text-xl text-white hover:text-white/80 transition-colors">
+              <div className="space-y-3 text-center lg:text-left">
+                <a href="mailto:support@fobi.com" className="block text-lg lg:text-xl text-white hover:text-white/80 transition-colors">
                   support@fobi.com
                 </a>
-                <a href="tel:+19876542130" className="block text-lg md:text-xl text-white hover:text-white/80 transition-colors">
+                <a href="tel:+19876542130" className="block text-lg lg:text-xl text-white hover:text-white/80 transition-colors">
                   +1 987 6542 130
                 </a>
               </div>
@@ -154,10 +154,10 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="py-2 md:py-4 border-t border-white/10 bg-white/10 -mx-96">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-white/50">
+          <div className="py-2 lg:py-4 border-t border-white/10 bg-white/10 -mx-96">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-4 text-xs text-white/50">
               <p>©2025 All Rights Reserved by Fobi</p>
-              <span className="hidden md:inline">|</span>
+              <span className="hidden lg:inline">|</span>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-white/80 transition-colors flex items-center gap-1 group relative w-fit">
                   <span className="relative">

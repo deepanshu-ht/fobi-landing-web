@@ -53,7 +53,7 @@ export default function DeployROISection() {
                     </li>
                   </ul>
                 </div>
-                <a href="#" className="mt-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[#9E8150] hover:bg-[#9E8150]/80 text-white px-5 py-3 border border-[#FFD07E]/50 transition-colors w-full font-bold text-xl">
+                <a href="#" className="mt-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[#9E8150] hover:bg-[#9E8150]/80 text-white px-5 py-3 border border-[#FFD07E]/50 transition-colors w-full font-bold md:text-xl">
                   <Calendar className="h-4 w-4" />
                   Schedule Strategic Demo
                 </a>
@@ -99,11 +99,11 @@ export default function DeployROISection() {
                   </ul>
                 </div>
                 <div className="flex flex-col w-full gap-3 mt-auto">
-                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg text-[#3E5BFF] font-semibold px-5 py-3 transition-colors text-xl">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg text-[#3E5BFF] font-semibold px-5 py-3 transition-colors md:text-xl">
                     <Download className="h-4 w-4" />
                     Download Investor Deck
                   </a>
-                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-t from-[#3D85FF] to-[#1154FF] hover:brightness-110 text-white font-bold text-xl px-5 py-3 border border-[#3E5BFF]/60 transition-colors">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-t from-[#3D85FF] to-[#1154FF] hover:brightness-110 text-white font-bold md:text-xl px-5 py-3 border border-[#3E5BFF]/60 transition-colors">
                     <Users className="h-4 w-4" />
                     Join Investor Community
                   </a>

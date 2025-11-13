@@ -27,8 +27,8 @@ export default function ROISection() {
   <div className="rounded-[calc(1rem-1px)] md:rounded-[calc(1.5rem-1px)] bg-gradient-to-b from-[#000000] to-[#000000] backdrop-blur-xl">
     
     {/* Header */}
-    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6 relative">
-      <div className="md:hidden px-4 pt-4">
+    <div className="flex flex-row md:items-start justify-between gap-4 md:gap-6 relative">
+      <div className="hidden">
         <div className="relative inline-block">
           <div className="absolute inset-0">
             <Image
@@ -49,11 +49,14 @@ export default function ROISection() {
         </div>
       </div>
       
-      <h3 className="text-sm md:text-4xl text-white font-semibold md:font-bold px-4 md:ml-12 md:mt-16 md:mb-12 leading-snug">
+      <h3 className="text-sm md:text-4xl text-white font-semibold md:font-bold px-4 md:ml-12 md:mt-16 md:mb-12 leading-snug hidden lg:block">
         Revenue Generated Per $ Marketing Spend
       </h3>
+      <h3 className="text-sm md:text-4xl text-white font-semibold md:font-bold px-4 md:ml-12 mt-4 leading-snug block lg:hidden">
+        Marketting ROI
+      </h3>
       
-      <div className="relative hidden md:block">
+      <div className="relative">
         <div className="absolute inset-0">
           <Image
             src="/bg.png"
@@ -66,7 +69,7 @@ export default function ROISection() {
         <div className="absolute w-px h-full bg-gradient-to-b from-white/30 to-transparent"></div>
         <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-l from-white/30 to-transparent"></div>
         <div className="relative px-6 py-3 rounded-tr-xl rounded-bl-xl">
-          <span className="text-white text-2xl font-semibold whitespace-nowrap">
+          <span className="text-white text-lg lg:text-2xl font-semibold whitespace-nowrap">
             10X Improvement
           </span>
         </div>
@@ -74,7 +77,7 @@ export default function ROISection() {
     </div>
 
     {/* Comparison Bars */}
-    <div className="space-y-3 md:space-y-6 px-4 pb-4 md:p-12 md:pt-0">
+    <div className="space-y-3 md:space-y-6 px-4 pb-4 md:p-12 pt-8 md:pt-0">
       {/* With Fobi Bar */}
       <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-6">
         <div className="h-12 md:h-18 bg-[#316BFF]/30 rounded-lg flex items-center justify-start px-3 md:px-3 border border-[#316BFF] w-full md:w-4/5">
