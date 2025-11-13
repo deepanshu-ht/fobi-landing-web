@@ -3,6 +3,7 @@
 import { ChevronDown, Menu, X, Wallet, Database, Building2, Phone, Mail, Globe, FileText, DollarSign, File, Presentation, TrendingUp, BarChart3, Users, PieChart, LineChart } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,13 +37,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 px-6 py-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6">
       <div className="mx-auto md:mx-6">
         <div className="outline-gradient rounded-xl bg-black/60 backdrop-blur-xl px-4 md:px-8 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-2 md:gap-4">
-              <div className="relative w-20 h-8 md:w-32 md:h-10">
+              <Link href="/" className="relative w-20 h-8 md:w-32 md:h-10">
                 <Image
                   src="/fobi.png"
                   alt="fobi"
@@ -50,7 +51,7 @@ export default function Navbar() {
                   className="object-contain"
                   priority
                 />
-              </div>
+              </Link>
               <div className="flex gap-2">
                 <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/20 px-1.5 py-0.5 md:px-4 md:py-1.5">
                   <span className="text-base md:text-lg">🇺🇸</span>
@@ -146,7 +147,7 @@ export default function Navbar() {
                 )}
               </div>
 
-              <button className="text-sm font-medium text-white/80 hover:text-white transition">About Us</button>
+              <Link href="/about" className="text-sm font-medium text-white/80 hover:text-white transition">About Us</Link>
               <button className="outline-gradient rounded-lg px-6 py-2 text-sm font-medium text-white hover:bg-white/5 transition">
                 Contact Us
               </button>
@@ -243,9 +244,9 @@ export default function Navbar() {
               </div>
 
               {/* About Us */}
-              <button className="text-left text-sm font-medium text-white/80 hover:text-white transition py-2">
+              <Link href="/about" className="text-left text-sm font-medium text-white/80 hover:text-white transition py-2">
                 About Us
-              </button>
+              </Link>
 
               {/* Contact Us */}
               <button className="outline-gradient rounded-lg px-6 py-2 text-sm font-medium text-white hover:bg-white/5 transition mt-2">

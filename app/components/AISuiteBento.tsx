@@ -42,7 +42,7 @@ export default function AISuiteBento() {
           {/* left side */}
           <div className="flex flex-col gap-4 w-full justify-between">
             <div className="flex flex-col lg:flex-row gap-4">
-              <div className="flex flex-col gap-4 w-full">
+              <div className="flex flex-col gap-4">
                 {/* $150B+ Card - Hidden on mobile */}
                 <div className="flex w-full lg:size-[16rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-6 flex-col justify-between gradient-border-blue" style={{ ['--og-width' as any]: '2px' }}>
                   <div className="my-auto flex flex-col md:gap-4">
@@ -81,7 +81,7 @@ export default function AISuiteBento() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 w-full">
+              <div className="flex flex-col gap-4">
                 {/* Corporate LLM Card */}
                 <div className="w-full lg:h-[21rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden min-h-[280px]">
                   <div className="flex items-start justify-between mb-2 md:mb-3">
@@ -160,9 +160,9 @@ export default function AISuiteBento() {
                 {/* AI Paralysis Banner - Hidden on mobile, shown as separate card */}
                 <div className="hidden lg:flex w-full lg:h-[11rem] rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl px-6 py-6 lg:py-0 items-center justify-between">
                   <div className="text-white text-xl font-semibold relative py-2">
-                    <div className="absolute top-0 right-3 w-5 h-full rounded-r-3xl border border-l-0 border-[#1D4099]" />
-                    <div className="absolute top-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
-                    <div className="absolute bottom-0 right-8 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
+                    <div className="absolute top-0 right-3 md:-right-3 w-5 h-full rounded-r-3xl border border-l-0 border-[#1D4099]" />
+                    <div className="absolute top-0 right-8 md:right-2 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
+                    <div className="absolute bottom-0 right-8 md:right-2 w-20 h-px rounded-3xl bg-gradient-to-r from-[#1D4099]/0 to-[#1D4099]" />
                     AI Paralysis Is Costing Businesses Billions Every company knows they need AI. Most don't know where to start. We solve that
                   </div>
                   <div className="hidden lg:flex items-center ml-4 text-[#3777FF]">
@@ -181,7 +181,7 @@ export default function AISuiteBento() {
           </div>
 
           {/* right side */}
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-4">
             {/* AI Web Presence Card */}
             <div className="w-full lg:w-[16rem] lg:h-1/2 rounded-2xl bg-[#0A0A0A] border border-white/10 backdrop-blur-xl p-5 md:p-6 flex flex-col overflow-hidden">
               <div className="hidden lg:flex justify-center mb-4 lg:-mx-6">

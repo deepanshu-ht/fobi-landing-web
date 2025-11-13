@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Mouse, ArrowUpRight } from "lucide-react";
-import Navbar from "./components/Navbar";
 import StatsShowcase from "./components/StatsShowcase";
 import AISuiteBento from "./components/AISuiteBento";
 import ROISection from "./components/ROISection";
@@ -10,12 +9,10 @@ import EnterpriseSection from "./components/EnterpriseSection";
 import SuccessStoriesSection from "./components/SuccessStoriesSection";
 import DeployROISection from "./components/DeployROISection";
 import FobiAI3Section from "./components/FobiAI3Section";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <Navbar />
 
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-140px)]">
@@ -145,7 +142,6 @@ export default function Home() {
       <SuccessStoriesSection />
       <DeployROISection />
       <FobiAI3Section />
-      <Footer />
     </div>
   );
 }
