@@ -9,7 +9,7 @@ export default function VisionSection() {
         <div className="w-[600px] h-[400px] bg-blue-600/5 rounded-full blur-[150px]" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8 text-center bg-[#0A0A0A] p-16 rounded-xl border border-[#4A5D82]/20">
+      <div className="relative z-10 mx-5 md:mx-auto max-w-7xl px-4 md:px-8 text-center bg-[#0A0A0A] py-10 md:py-16 rounded-xl border border-[#4A5D82]/20">
         {/* Icon */}
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#131F3F] border border-[#131F3F]/20 mb-6 p-5">
           <Image
@@ -24,9 +24,9 @@ export default function VisionSection() {
           Our Vision
         </h2>
         
-        <span className="text-2xl font-bold md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-          To become the world's leading AI-native consulting and <br/>implementation platform, 
-          transforming enterprise <br/> potential into tangible performance
+        <span className="text-lg font-bold md:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
+          To become the world's leading AI-native consulting and <br className="hidden md:block"/>implementation platform, 
+          transforming enterprise <br className="hidden md:block"/> potential into tangible performance
         </span>
       </div>
     </section>

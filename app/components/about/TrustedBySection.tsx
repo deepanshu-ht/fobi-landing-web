@@ -22,16 +22,16 @@ const companies = [
 
 export default function TrustedBySection() {
   return (
-    <section className="relative py-16 md:py-24 mt-16">
-      {/* Background glow */}
+    <section className="relative py-16 pt-26 md:py-24 mt-8 md:mt-16 overflow-x-clip">
+      {/* Background earth */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none w-full h-full">
-        <div className="flex w-full -z-10 justify-center">
+        <div className="flex w-full -z-10 justify-center items-center">
           <Image
             src={"/Earth.png"}
             alt="Earth"
             width={1000}
             height={1000}
-            className="-rotate-55 w-4/5 h-full opacity-70"
+            className="-rotate-55 w-full sm:w-3/4 opacity-70 -mt-24 scale-150 xl:scale-110 md:mt-16 lg:mt-24"
           />
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function TrustedBySection() {
             alt="Trusted By"
             width={1000}
             height={1000}
-            className="w-3/4 h-full rounded-xl"
+            className="w-full sm:w-3/4 h-full rounded-xl"
           />
         </div>
 

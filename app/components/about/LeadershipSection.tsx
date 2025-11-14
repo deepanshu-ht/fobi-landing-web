@@ -121,7 +121,7 @@ export default function LeadershipSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Peter */}
               <div className="relative bg-[#050506] border border-white/10 rounded-3xl px-6 py-8 md:px-8 md:py-8 shadow-[0_20px_70px_rgba(0,0,0,0.7)]">
-                <div className="flex items-start gap-6">
+                <div className="flex flex-col items-start gap-6">
                   <div className="relative w-20 h-20 md:w-22 md:h-22 rounded-full overflow-hidden border border-white/15 flex-shrink-0">
                     <Image
                       src="/team/peter.png"
@@ -149,7 +149,7 @@ export default function LeadershipSection() {
 
               {/* Jeff */}
               <div className="relative bg-[#050506] border border-white/10 rounded-3xl px-6 py-8 md:px-8 md:py-8 shadow-[0_20px_70px_rgba(0,0,0,0.7)]">
-                <div className="flex items-start gap-6">
+                <div className="flex flex-col items-start gap-6">
                   <div className="relative w-20 h-20 md:w-22 md:h-22 rounded-full overflow-hidden border border-white/15 flex-shrink-0">
                     <Image
                       src="/team/jeff.png"

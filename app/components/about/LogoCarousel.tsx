@@ -14,7 +14,7 @@ export default function LogoCarousel() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Marquee Container */}
         <div className='w-full overflow-hidden'>
-          <div className="relative overflow-hidden -mx-20">
+          <div className="relative overflow-hidden -mx-8 sm:-mx-16 lg:-mx-20">
             <Marquee speed={60} autoFill>
               {enterprises.map((enterprise) => (
                 <div
