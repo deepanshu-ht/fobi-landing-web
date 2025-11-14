@@ -9,7 +9,7 @@ export default function VisionSection() {
         <div className="w-[600px] h-[400px] bg-blue-600/5 rounded-full blur-[150px]" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8 text-center bg-[#0A0A0A] p-16 rounded-xl border border-[#4A5D82]/20">
         {/* Icon */}
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#131F3F] border border-[#131F3F]/20 mb-6 p-5">
           <Image

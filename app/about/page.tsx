@@ -4,6 +4,7 @@ import VisionSection from "../components/about/VisionSection";
 import WhyFobiSection from "../components/about/WhyFobiSection";
 import TrustedBySection from "../components/about/TrustedBySection";
 import LeadershipSection from "../components/about/LeadershipSection";
+import FobiAI3Section from "../components/FobiAI3Section";
 
 export default function AboutPage() {
   return (
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <WhyFobiSection />
       <TrustedBySection />
       <LeadershipSection />
+      <FobiAI3Section />
     </main>
   );
 }

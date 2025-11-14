@@ -25,7 +25,7 @@ const pillars = [
 
 export default function WhyFobiSection() {
   return (
-    <section className="relative py-16 md:py-24 bg-black">
+    <section className="relative py-16 md:py-24">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-full h-1/4 bg-[#0047FF]/50 rounded-full blur-[150px] z-0" />
       </div>
@@ -45,9 +45,9 @@ export default function WhyFobiSection() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="group flex relative p-6 md:p-8 rounded-2xl bg-black border border-white/10 hover:border-blue-500/50 transition-all duration-300"
+              className="group flex relative py-6 md:py-8 pr-6 pl-3 rounded-2xl bg-black border border-white/10 hover:border-blue-500/50 transition-all duration-300"
             >
-              <div className="bg-blue-500 h-8 w-10 rounded-full flex items-center justify-center mx-4 px-1">
+              <div className="bg-blue-500 h-4 w-4 rounded-full flex items-center justify-center mx-4 px-1 mt-2">
                 <Check className="text-white" />
               </div>
               <div>
