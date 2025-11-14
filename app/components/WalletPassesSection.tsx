@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function WalletPassesSection() {
   return (
-    <section className="relative bg-black py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-black py-20 md:py-16 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-16">
         {/* Header */}
         <div className="text-center mb-8 md:mb-16">

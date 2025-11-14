@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white">
 
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-140px)]">
+      <section className="relative h-screen">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 h-[calc(100vh-140px)] px-6 md:px-16 md:py-20 md:pb-48 flex items-center md:items-stretch">
+        <div className="relative z-10 h-screen px-6 md:px-16 md:py-20 lg:py-40 md:pb-48 flex items-center md:items-stretch">
           <div className="mx-auto md:mx-24 w-full md:h-full">
             <div className="flex flex-col md:h-full justify-center md:justify-between gap-6 md:gap-8">
               {/* Main Content */}

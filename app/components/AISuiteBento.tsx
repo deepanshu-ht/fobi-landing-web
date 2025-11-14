@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Database, Globe, Mail, Phone, ShieldCheck } from
 
 export default function AISuiteBento() {
   return (
-    <section className="relative py-16 md:py-28 bg-black overflow-hidden">
+    <section className="relative py-6 md:pb-28 md:pt-12 bg-black overflow-hidden">
       {/* Background gradient */}
       {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-blue-900/10 to-black" /> */}
       

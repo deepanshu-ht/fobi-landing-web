@@ -21,7 +21,7 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
   const rightItems = [items[1], items[3]].filter(Boolean);
 
   return (
-    <section className={`relative py-20 md:py-28 overflow-hidden bg-black ${className}`}>
+    <section className={`relative pt-20 md:pt-28 overflow-hidden bg-black ${className}`}>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(1200px_400px_at_center_top,rgba(255,255,255,0.06),transparent)]" />
         {/* Blue glow effect - center blur ball */}
@@ -45,7 +45,7 @@ export default function StatsShowcase({ title, subtitle, badgeSrc, items, classN
           <p className="text-sm md:text-3xl text-white/70 font-semibold">{subtitle}</p>
         </div>
 
-        <div className="relative mt-10 md:mt-14 min-h-[520px] md:min-h-[560px] -mx-10">
+        <div className="relative min-h-[520px] md:min-h-[560px] -mx-10">
           <div className="relative z-10 flex justify-center gap-1 md:gap-4 pt-6 md:pt-8">
             <div className='flex flex-col gap-3 md:gap-4 ml-0 md:-ml-36 w-[10%] md:w-81'>
               <div className='mt-4 md:mt-8 h-[128px] md:h-42 w-full md:w-81 rounded-xl bg-[radial-gradient(120%_120%_at_110%_100%,rgba(227,236,242,0.16)_0%,rgba(227,236,242,0)_60%)]'/>
